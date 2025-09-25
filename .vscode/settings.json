@@ -1,4 +1,7 @@
 {
-    "window.zoomLevel": 0.5
+    "window.zoomLevel": 0.5,
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda",
+    "python-envs.pythonProjects": []
 
 }
