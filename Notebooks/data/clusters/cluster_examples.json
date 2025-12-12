@@ -1,0 +1,334 @@
+{
+  "0": {
+    "n": 9,
+    "top_by_conf": [
+      {
+        "file": "data\\filtered\\Ahesan_2.csv",
+        "player": "Ahesan",
+        "gmm_confidence": 1.0,
+        "_proxy_score": -0.18716825252754893
+      },
+      {
+        "file": "data\\filtered\\Ahesan_3.csv",
+        "player": "Ahesan",
+        "gmm_confidence": 1.0,
+        "_proxy_score": 0.9660279230369038
+      },
+      {
+        "file": "data\\filtered\\Ahesan_4.csv",
+        "player": "Ahesan",
+        "gmm_confidence": 1.0,
+        "_proxy_score": -1.356976346111159
+      }
+    ],
+    "bottom_by_conf": [
+      {
+        "file": "data\\filtered\\Ahesan_2.csv",
+        "player": "Ahesan",
+        "gmm_confidence": 1.0,
+        "_proxy_score": -0.18716825252754893
+      },
+      {
+        "file": "data\\filtered\\Ahesan_3.csv",
+        "player": "Ahesan",
+        "gmm_confidence": 1.0,
+        "_proxy_score": 0.9660279230369038
+      },
+      {
+        "file": "data\\filtered\\Ahesan_4.csv",
+        "player": "Ahesan",
+        "gmm_confidence": 1.0,
+        "_proxy_score": -1.356976346111159
+      }
+    ],
+    "top_by_proxy": [
+      {
+        "file": "data\\filtered\\Ahesan_3.csv",
+        "player": "Ahesan",
+        "_proxy_score": 0.9660279230369038,
+        "gmm_confidence": 1.0
+      },
+      {
+        "file": "data\\filtered\\Nihaal_2.csv",
+        "player": "Nihaal",
+        "_proxy_score": 0.21048846770480467,
+        "gmm_confidence": 1.0
+      },
+      {
+        "file": "data\\filtered\\Ahesan_5.csv",
+        "player": "Ahesan",
+        "_proxy_score": 0.1824129507895902,
+        "gmm_confidence": 1.0
+      }
+    ],
+    "bottom_by_proxy": [
+      {
+        "file": "data\\filtered\\Ahesan_4.csv",
+        "player": "Ahesan",
+        "_proxy_score": -1.356976346111159,
+        "gmm_confidence": 1.0
+      },
+      {
+        "file": "data\\filtered\\Nihaal_4.csv",
+        "player": "Nihaal",
+        "_proxy_score": -0.8180962751971544,
+        "gmm_confidence": 1.0
+      },
+      {
+        "file": "data\\filtered\\Nihaal_1.csv",
+        "player": "Nihaal",
+        "_proxy_score": -0.22636432464441925,
+        "gmm_confidence": 1.0
+      }
+    ]
+  },
+  "1": {
+    "n": 10,
+    "top_by_conf": [
+      {
+        "file": "data\\filtered\\Devansh_1.csv",
+        "player": "Devansh",
+        "gmm_confidence": 1.0,
+        "_proxy_score": 1.8682906635861376
+      },
+      {
+        "file": "data\\filtered\\Devansh_2.csv",
+        "player": "Devansh",
+        "gmm_confidence": 1.0,
+        "_proxy_score": -0.5148452884498135
+      },
+      {
+        "file": "data\\filtered\\Devansh_3.csv",
+        "player": "Devansh",
+        "gmm_confidence": 1.0,
+        "_proxy_score": 0.0968093300881069
+      }
+    ],
+    "bottom_by_conf": [
+      {
+        "file": "data\\filtered\\Devansh_1.csv",
+        "player": "Devansh",
+        "gmm_confidence": 1.0,
+        "_proxy_score": 1.8682906635861376
+      },
+      {
+        "file": "data\\filtered\\Devansh_2.csv",
+        "player": "Devansh",
+        "gmm_confidence": 1.0,
+        "_proxy_score": -0.5148452884498135
+      },
+      {
+        "file": "data\\filtered\\Devansh_3.csv",
+        "player": "Devansh",
+        "gmm_confidence": 1.0,
+        "_proxy_score": 0.0968093300881069
+      }
+    ],
+    "top_by_proxy": [
+      {
+        "file": "data\\filtered\\Soham_3.csv",
+        "player": "Soham",
+        "_proxy_score": 2.103000141522938,
+        "gmm_confidence": 1.0
+      },
+      {
+        "file": "data\\filtered\\Devansh_1.csv",
+        "player": "Devansh",
+        "_proxy_score": 1.8682906635861376,
+        "gmm_confidence": 1.0
+      },
+      {
+        "file": "data\\filtered\\Soham_4.csv",
+        "player": "Soham",
+        "_proxy_score": 1.3972680390194556,
+        "gmm_confidence": 1.0
+      }
+    ],
+    "bottom_by_proxy": [
+      {
+        "file": "data\\filtered\\Devansh_4.csv",
+        "player": "Devansh",
+        "_proxy_score": -0.5756712975652265,
+        "gmm_confidence": 1.0
+      },
+      {
+        "file": "data\\filtered\\Devansh_2.csv",
+        "player": "Devansh",
+        "_proxy_score": -0.5148452884498135,
+        "gmm_confidence": 1.0
+      },
+      {
+        "file": "data\\filtered\\Devansh_5.csv",
+        "player": "Devansh",
+        "_proxy_score": -0.2330401270632435,
+        "gmm_confidence": 1.0
+      }
+    ]
+  },
+  "2": {
+    "n": 10,
+    "top_by_conf": [
+      {
+        "file": "data\\filtered\\Jordan_1.csv",
+        "player": "Jordan",
+        "gmm_confidence": 1.0,
+        "_proxy_score": -0.48634260020504083
+      },
+      {
+        "file": "data\\filtered\\Jordan_2.csv",
+        "player": "Jordan",
+        "gmm_confidence": 1.0,
+        "_proxy_score": -0.5182885130003838
+      },
+      {
+        "file": "data\\filtered\\Jordan_3.csv",
+        "player": "Jordan",
+        "gmm_confidence": 1.0,
+        "_proxy_score": 0.6050802117610552
+      }
+    ],
+    "bottom_by_conf": [
+      {
+        "file": "data\\filtered\\Jordan_1.csv",
+        "player": "Jordan",
+        "gmm_confidence": 1.0,
+        "_proxy_score": -0.48634260020504083
+      },
+      {
+        "file": "data\\filtered\\Jordan_2.csv",
+        "player": "Jordan",
+        "gmm_confidence": 1.0,
+        "_proxy_score": -0.5182885130003838
+      },
+      {
+        "file": "data\\filtered\\Jordan_3.csv",
+        "player": "Jordan",
+        "gmm_confidence": 1.0,
+        "_proxy_score": 0.6050802117610552
+      }
+    ],
+    "top_by_proxy": [
+      {
+        "file": "data\\filtered\\Jordan_3.csv",
+        "player": "Jordan",
+        "_proxy_score": 0.6050802117610552,
+        "gmm_confidence": 1.0
+      },
+      {
+        "file": "data\\filtered\\Jordan_5.csv",
+        "player": "Jordan",
+        "_proxy_score": -0.2927386325802095,
+        "gmm_confidence": 1.0
+      },
+      {
+        "file": "data\\filtered\\Yadnesh_1.csv",
+        "player": "Yadnesh",
+        "_proxy_score": -0.29763383443823505,
+        "gmm_confidence": 1.0
+      }
+    ],
+    "bottom_by_proxy": [
+      {
+        "file": "data\\filtered\\Yadnesh_4.csv",
+        "player": "Yadnesh",
+        "_proxy_score": -1.4109765513226253,
+        "gmm_confidence": 1.0
+      },
+      {
+        "file": "data\\filtered\\Yadnesh_2.csv",
+        "player": "Yadnesh",
+        "_proxy_score": -1.193415510197387,
+        "gmm_confidence": 1.0
+      },
+      {
+        "file": "data\\filtered\\Yadnesh_5.csv",
+        "player": "Yadnesh",
+        "_proxy_score": -1.1145547816972925,
+        "gmm_confidence": 1.0
+      }
+    ]
+  },
+  "3": {
+    "n": 6,
+    "top_by_conf": [
+      {
+        "file": "data\\filtered\\Ahesan_1.csv",
+        "player": "Ahesan",
+        "gmm_confidence": 1.0,
+        "_proxy_score": -2.385121023698284
+      },
+      {
+        "file": "data\\filtered\\Karan_1.csv",
+        "player": "Karan",
+        "gmm_confidence": 1.0,
+        "_proxy_score": 0.24804074801685227
+      },
+      {
+        "file": "data\\filtered\\Karan_2.csv",
+        "player": "Karan",
+        "gmm_confidence": 1.0,
+        "_proxy_score": 0.7169786962622077
+      }
+    ],
+    "bottom_by_conf": [
+      {
+        "file": "data\\filtered\\Ahesan_1.csv",
+        "player": "Ahesan",
+        "gmm_confidence": 1.0,
+        "_proxy_score": -2.385121023698284
+      },
+      {
+        "file": "data\\filtered\\Karan_1.csv",
+        "player": "Karan",
+        "gmm_confidence": 1.0,
+        "_proxy_score": 0.24804074801685227
+      },
+      {
+        "file": "data\\filtered\\Karan_2.csv",
+        "player": "Karan",
+        "gmm_confidence": 1.0,
+        "_proxy_score": 0.7169786962622077
+      }
+    ],
+    "top_by_proxy": [
+      {
+        "file": "data\\filtered\\Karan_4.csv",
+        "player": "Karan",
+        "_proxy_score": 1.4825687669109402,
+        "gmm_confidence": 1.0
+      },
+      {
+        "file": "data\\filtered\\Karan_5.csv",
+        "player": "Karan",
+        "_proxy_score": 1.1399484692687465,
+        "gmm_confidence": 1.0
+      },
+      {
+        "file": "data\\filtered\\Karan_2.csv",
+        "player": "Karan",
+        "_proxy_score": 0.7169786962622077,
+        "gmm_confidence": 1.0
+      }
+    ],
+    "bottom_by_proxy": [
+      {
+        "file": "data\\filtered\\Ahesan_1.csv",
+        "player": "Ahesan",
+        "_proxy_score": -2.385121023698284,
+        "gmm_confidence": 1.0
+      },
+      {
+        "file": "data\\filtered\\Karan_3.csv",
+        "player": "Karan",
+        "_proxy_score": 0.15152544652108768,
+        "gmm_confidence": 1.0
+      },
+      {
+        "file": "data\\filtered\\Karan_1.csv",
+        "player": "Karan",
+        "_proxy_score": 0.24804074801685227,
+        "gmm_confidence": 1.0
+      }
+    ]
+  }
+}

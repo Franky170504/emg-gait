@@ -1,121 +1,191 @@
 0
-Rectus Femoris right__std
-Rectus Femoris right__rms
-Rectus Femoris right__rms_rel
-Rectus Femoris right__wl
-Rectus Femoris right__peak
-Rectus Femoris right__peak_rel
-Rectus Femoris right__mnf
-Rectus Femoris right__mdf
-Rectus Femoris right__time_to_peak_s
-Rectus Femoris right__dur_halfmax_s
-Rectus Femoris right__mrms_mean
-Rectus Femoris right__mrms_mean_rel
-Rectus Femoris right__mrms_peak
-Rectus Femoris right__mrms_peak_rel
-Rectus Femoris left__std
-Rectus Femoris left__rms
-Rectus Femoris left__rms_rel
-Rectus Femoris left__wl
-Rectus Femoris left__peak
-Rectus Femoris left__peak_rel
-Rectus Femoris left__mnf
-Rectus Femoris left__mdf
-Rectus Femoris left__time_to_peak_s
-Rectus Femoris left__dur_halfmax_s
-Rectus Femoris left__mrms_mean
-Rectus Femoris left__mrms_mean_rel
-Rectus Femoris left__mrms_peak
-Rectus Femoris left__mrms_peak_rel
-Hamstrings right__std
-Hamstrings right__rms
-Hamstrings right__rms_rel
-Hamstrings right__wl
-Hamstrings right__peak
-Hamstrings right__peak_rel
-Hamstrings right__mnf
-Hamstrings right__mdf
-Hamstrings right__time_to_peak_s
-Hamstrings right__dur_halfmax_s
-Hamstrings right__mrms_mean
-Hamstrings right__mrms_mean_rel
-Hamstrings right__mrms_peak
-Hamstrings right__mrms_peak_rel
-Hamstrings left__std
-Hamstrings left__rms
-Hamstrings left__rms_rel
-Hamstrings left__wl
-Hamstrings left__peak
-Hamstrings left__peak_rel
-Hamstrings left__mnf
-Hamstrings left__mdf
-Hamstrings left__time_to_peak_s
-Hamstrings left__dur_halfmax_s
-Hamstrings left__mrms_mean
-Hamstrings left__mrms_mean_rel
-Hamstrings left__mrms_peak
-Hamstrings left__mrms_peak_rel
-TibilaisÂ Anterior right__std
-TibilaisÂ Anterior right__rms
-TibilaisÂ Anterior right__rms_rel
-TibilaisÂ Anterior right__wl
-TibilaisÂ Anterior right__peak
-TibilaisÂ Anterior right__peak_rel
-TibilaisÂ Anterior right__mnf
-TibilaisÂ Anterior right__mdf
-TibilaisÂ Anterior right__time_to_peak_s
-TibilaisÂ Anterior right__dur_halfmax_s
-TibilaisÂ Anterior right__mrms_mean
-TibilaisÂ Anterior right__mrms_mean_rel
-TibilaisÂ Anterior right__mrms_peak
-TibilaisÂ Anterior right__mrms_peak_rel
-TibilaisÂ Anterior left__std
-TibilaisÂ Anterior left__rms
-TibilaisÂ Anterior left__rms_rel
-TibilaisÂ Anterior left__wl
-TibilaisÂ Anterior left__peak
-TibilaisÂ Anterior left__peak_rel
-TibilaisÂ Anterior left__mnf
-TibilaisÂ Anterior left__mdf
-TibilaisÂ Anterior left__time_to_peak_s
-TibilaisÂ Anterior left__dur_halfmax_s
-TibilaisÂ Anterior left__mrms_mean
-TibilaisÂ Anterior left__mrms_mean_rel
-TibilaisÂ Anterior left__mrms_peak
-TibilaisÂ Anterior left__mrms_peak_rel
-Gastrocnemius right__std
-Gastrocnemius right__rms
-Gastrocnemius right__rms_rel
-Gastrocnemius right__wl
-Gastrocnemius right__peak
-Gastrocnemius right__peak_rel
-Gastrocnemius right__mnf
-Gastrocnemius right__mdf
-Gastrocnemius right__time_to_peak_s
-Gastrocnemius right__dur_halfmax_s
-Gastrocnemius right__mrms_mean
-Gastrocnemius right__mrms_mean_rel
-Gastrocnemius right__mrms_peak
-Gastrocnemius right__mrms_peak_rel
-Gastrocnemius left__std
-Gastrocnemius left__rms
-Gastrocnemius left__rms_rel
-Gastrocnemius left__wl
-Gastrocnemius left__peak
-Gastrocnemius left__peak_rel
-Gastrocnemius left__mnf
-Gastrocnemius left__mdf
-Gastrocnemius left__time_to_peak_s
+Gastrocnemius left__bp_100_200
+Gastrocnemius left__bp_20_60
+Gastrocnemius left__bp_60_100
 Gastrocnemius left__dur_halfmax_s
+Gastrocnemius left__iEMG
+Gastrocnemius left__iEMG_rel
+Gastrocnemius left__mav
+Gastrocnemius left__mav_rel
+Gastrocnemius left__mdf
+Gastrocnemius left__mean
+Gastrocnemius left__mnf
 Gastrocnemius left__mrms_mean
 Gastrocnemius left__mrms_mean_rel
 Gastrocnemius left__mrms_peak
 Gastrocnemius left__mrms_peak_rel
-Rectus Femoris__LR_mean_ratio
-Rectus Femoris__LR_coact_simple
-TibilaisÂ Anterior__LR_mean_ratio
-TibilaisÂ Anterior__LR_coact_simple
-Gastrocnemius__LR_mean_ratio
+Gastrocnemius left__peak
+Gastrocnemius left__peak_rel
+Gastrocnemius left__rms
+Gastrocnemius left__rms_rel
+Gastrocnemius left__std
+Gastrocnemius left__time_to_peak_s
+Gastrocnemius left__wl
+Gastrocnemius right__bp_100_200
+Gastrocnemius right__bp_20_60
+Gastrocnemius right__bp_60_100
+Gastrocnemius right__dur_halfmax_s
+Gastrocnemius right__iEMG
+Gastrocnemius right__iEMG_rel
+Gastrocnemius right__mav
+Gastrocnemius right__mav_rel
+Gastrocnemius right__mdf
+Gastrocnemius right__mean
+Gastrocnemius right__mnf
+Gastrocnemius right__mrms_mean
+Gastrocnemius right__mrms_mean_rel
+Gastrocnemius right__mrms_peak
+Gastrocnemius right__mrms_peak_rel
+Gastrocnemius right__peak
+Gastrocnemius right__peak_rel
+Gastrocnemius right__rms
+Gastrocnemius right__rms_rel
+Gastrocnemius right__std
+Gastrocnemius right__time_to_peak_s
+Gastrocnemius right__wl
 Gastrocnemius__LR_coact_simple
-Hamstrings__LR_mean_ratio
+Gastrocnemius__LR_mean_absdev1
+Gastrocnemius__LR_mean_ratio
+Hamstrings left__bp_100_200
+Hamstrings left__bp_20_60
+Hamstrings left__bp_60_100
+Hamstrings left__dur_halfmax_s
+Hamstrings left__iEMG
+Hamstrings left__iEMG_rel
+Hamstrings left__mav
+Hamstrings left__mav_rel
+Hamstrings left__mdf
+Hamstrings left__mean
+Hamstrings left__mnf
+Hamstrings left__mrms_mean
+Hamstrings left__mrms_mean_rel
+Hamstrings left__mrms_peak
+Hamstrings left__mrms_peak_rel
+Hamstrings left__peak
+Hamstrings left__peak_rel
+Hamstrings left__rms
+Hamstrings left__rms_rel
+Hamstrings left__std
+Hamstrings left__time_to_peak_s
+Hamstrings left__wl
+Hamstrings right__bp_100_200
+Hamstrings right__bp_20_60
+Hamstrings right__bp_60_100
+Hamstrings right__dur_halfmax_s
+Hamstrings right__iEMG
+Hamstrings right__iEMG_rel
+Hamstrings right__mav
+Hamstrings right__mav_rel
+Hamstrings right__mdf
+Hamstrings right__mean
+Hamstrings right__mnf
+Hamstrings right__mrms_mean
+Hamstrings right__mrms_mean_rel
+Hamstrings right__mrms_peak
+Hamstrings right__mrms_peak_rel
+Hamstrings right__peak
+Hamstrings right__peak_rel
+Hamstrings right__rms
+Hamstrings right__rms_rel
+Hamstrings right__std
+Hamstrings right__time_to_peak_s
+Hamstrings right__wl
 Hamstrings__LR_coact_simple
+Hamstrings__LR_mean_absdev1
+Hamstrings__LR_mean_ratio
+Rectus Femoris left__bp_100_200
+Rectus Femoris left__bp_20_60
+Rectus Femoris left__bp_60_100
+Rectus Femoris left__dur_halfmax_s
+Rectus Femoris left__iEMG
+Rectus Femoris left__iEMG_rel
+Rectus Femoris left__mav
+Rectus Femoris left__mav_rel
+Rectus Femoris left__mdf
+Rectus Femoris left__mean
+Rectus Femoris left__mnf
+Rectus Femoris left__mrms_mean
+Rectus Femoris left__mrms_mean_rel
+Rectus Femoris left__mrms_peak
+Rectus Femoris left__mrms_peak_rel
+Rectus Femoris left__peak
+Rectus Femoris left__peak_rel
+Rectus Femoris left__rms
+Rectus Femoris left__rms_rel
+Rectus Femoris left__std
+Rectus Femoris left__time_to_peak_s
+Rectus Femoris left__wl
+Rectus Femoris right__bp_100_200
+Rectus Femoris right__bp_20_60
+Rectus Femoris right__bp_60_100
+Rectus Femoris right__dur_halfmax_s
+Rectus Femoris right__iEMG
+Rectus Femoris right__iEMG_rel
+Rectus Femoris right__mav
+Rectus Femoris right__mav_rel
+Rectus Femoris right__mdf
+Rectus Femoris right__mean
+Rectus Femoris right__mnf
+Rectus Femoris right__mrms_mean
+Rectus Femoris right__mrms_mean_rel
+Rectus Femoris right__mrms_peak
+Rectus Femoris right__mrms_peak_rel
+Rectus Femoris right__peak
+Rectus Femoris right__peak_rel
+Rectus Femoris right__rms
+Rectus Femoris right__rms_rel
+Rectus Femoris right__std
+Rectus Femoris right__time_to_peak_s
+Rectus Femoris right__wl
+Rectus Femoris__LR_coact_simple
+Rectus Femoris__LR_mean_absdev1
+Rectus Femoris__LR_mean_ratio
+TibilaisÂ Anterior left__bp_100_200
+TibilaisÂ Anterior left__bp_20_60
+TibilaisÂ Anterior left__bp_60_100
+TibilaisÂ Anterior left__dur_halfmax_s
+TibilaisÂ Anterior left__iEMG
+TibilaisÂ Anterior left__iEMG_rel
+TibilaisÂ Anterior left__mav
+TibilaisÂ Anterior left__mav_rel
+TibilaisÂ Anterior left__mdf
+TibilaisÂ Anterior left__mean
+TibilaisÂ Anterior left__mnf
+TibilaisÂ Anterior left__mrms_mean
+TibilaisÂ Anterior left__mrms_mean_rel
+TibilaisÂ Anterior left__mrms_peak
+TibilaisÂ Anterior left__mrms_peak_rel
+TibilaisÂ Anterior left__peak
+TibilaisÂ Anterior left__peak_rel
+TibilaisÂ Anterior left__rms
+TibilaisÂ Anterior left__rms_rel
+TibilaisÂ Anterior left__std
+TibilaisÂ Anterior left__time_to_peak_s
+TibilaisÂ Anterior left__wl
+TibilaisÂ Anterior right__bp_100_200
+TibilaisÂ Anterior right__bp_20_60
+TibilaisÂ Anterior right__bp_60_100
+TibilaisÂ Anterior right__dur_halfmax_s
+TibilaisÂ Anterior right__iEMG
+TibilaisÂ Anterior right__iEMG_rel
+TibilaisÂ Anterior right__mav
+TibilaisÂ Anterior right__mav_rel
+TibilaisÂ Anterior right__mdf
+TibilaisÂ Anterior right__mean
+TibilaisÂ Anterior right__mnf
+TibilaisÂ Anterior right__mrms_mean
+TibilaisÂ Anterior right__mrms_mean_rel
+TibilaisÂ Anterior right__mrms_peak
+TibilaisÂ Anterior right__mrms_peak_rel
+TibilaisÂ Anterior right__peak
+TibilaisÂ Anterior right__peak_rel
+TibilaisÂ Anterior right__rms
+TibilaisÂ Anterior right__rms_rel
+TibilaisÂ Anterior right__std
+TibilaisÂ Anterior right__time_to_peak_s
+TibilaisÂ Anterior right__wl
+TibilaisÂ Anterior__LR_coact_simple
+TibilaisÂ Anterior__LR_mean_absdev1
+TibilaisÂ Anterior__LR_mean_ratio
+trial_mean_of_channel_means
+trial_peak_of_channel_peaks

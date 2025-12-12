@@ -1,0 +1,8 @@
+fold,test_player,n_test,accuracy,f1_macro
+1,Ahesan,5,0.2,0.3333333333333333
+2,Devansh,5,0.4,0.19047619047619047
+3,Jordan,5,0.8,0.4444444444444444
+4,Karan,5,1.0,1.0
+5,Nihaal,5,0.6,0.25
+6,Soham,5,1.0,1.0
+7,Yadnesh,5,1.0,1.0
