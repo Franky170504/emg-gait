@@ -1,0 +1,16 @@
+Algorithm: svm
+Shot Category: longpass
+Overall Accuracy: 0.8133
+F1-Macro Score: 0.7956
+
+Detailed Report:
+               precision    recall  f1-score   support
+
+      Average       0.71      0.88      0.79        17
+Below-Average       0.65      0.65      0.65        17
+    Excellent       0.92      1.00      0.96        24
+         Poor       1.00      0.65      0.79        17
+
+     accuracy                           0.81        75
+    macro avg       0.82      0.79      0.80        75
+ weighted avg       0.83      0.81      0.81        75

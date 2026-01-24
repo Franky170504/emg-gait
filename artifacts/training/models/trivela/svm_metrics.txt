@@ -1,0 +1,16 @@
+Algorithm: svm
+Shot Category: trivela
+Overall Accuracy: 0.8667
+F1-Macro Score: 0.8683
+
+Detailed Report:
+               precision    recall  f1-score   support
+
+      Average       0.68      0.94      0.79        18
+Below-Average       0.93      0.82      0.88        17
+    Excellent       0.94      0.75      0.83        20
+         Poor       1.00      0.95      0.97        20
+
+     accuracy                           0.87        75
+    macro avg       0.89      0.87      0.87        75
+ weighted avg       0.89      0.87      0.87        75

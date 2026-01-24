@@ -1,0 +1,13 @@
+TRAINING_RAW_DIR = r"artifacts/training/raw"
+TRAINING_PROCESSED_DIR = r"artifacts/training/processed"
+TRAINING_FILTERED_DIR = r"artifacts/training/filtered"
+TRAINING_FEATURES_DIR = r"artifacts/training/features"
+TRAINING_CLUSTERS_DIR = r"artifacts/training/clusters"
+TRAINING_MODELS_DIR = r"artifacts/training/models"
+
+TESTING_RAW_DIR = r"artifacts/testing/raw"
+TESTING_PROCESSED_DIR = r"artifacts/testing/processed"
+TESTING_FILTERED_DIR = r"artifacts/testing/filtered"
+TESTING_FEATURES_DIR = r"artifacts/testing/features"
+TESTING_CLUSTERS_DIR = r"artifacts/testing/clusters"
+TESTING_MODELS_DIR = r"artifacts/testing/models"

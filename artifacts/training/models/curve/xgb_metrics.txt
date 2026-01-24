@@ -1,0 +1,16 @@
+Algorithm: xgb
+Shot Category: curve
+Overall Accuracy: 0.8800
+F1-Macro Score: 0.8727
+
+Detailed Report:
+               precision    recall  f1-score   support
+
+      Average       0.94      0.91      0.92        32
+Below-Average       0.91      0.91      0.91        11
+    Excellent       0.92      0.75      0.83        16
+         Poor       0.75      0.94      0.83        16
+
+     accuracy                           0.88        75
+    macro avg       0.88      0.88      0.87        75
+ weighted avg       0.89      0.88      0.88        75

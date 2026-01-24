@@ -1,0 +1,16 @@
+Algorithm: xgb
+Shot Category: powershot
+Overall Accuracy: 0.8267
+F1-Macro Score: 0.8136
+
+Detailed Report:
+               precision    recall  f1-score   support
+
+      Average       0.95      0.91      0.93        23
+Below-Average       0.71      0.62      0.67        16
+    Excellent       0.84      0.89      0.86        18
+         Poor       0.75      0.83      0.79        18
+
+     accuracy                           0.83        75
+    macro avg       0.82      0.82      0.81        75
+ weighted avg       0.83      0.83      0.83        75

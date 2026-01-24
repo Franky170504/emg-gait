@@ -1,0 +1,16 @@
+Algorithm: xgb
+Shot Category: chipshot
+Overall Accuracy: 0.9067
+F1-Macro Score: 0.9005
+
+Detailed Report:
+               precision    recall  f1-score   support
+
+      Average       0.80      0.92      0.86        13
+Below-Average       0.94      0.85      0.89        20
+    Excellent       0.94      0.88      0.91        17
+         Poor       0.92      0.96      0.94        25
+
+     accuracy                           0.91        75
+    macro avg       0.90      0.90      0.90        75
+ weighted avg       0.91      0.91      0.91        75

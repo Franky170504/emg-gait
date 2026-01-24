@@ -1,0 +1,16 @@
+Algorithm: svm
+Shot Category: volley
+Overall Accuracy: 0.8933
+F1-Macro Score: 0.9108
+
+Detailed Report:
+               precision    recall  f1-score   support
+
+      Average       0.81      0.88      0.85        25
+Below-Average       0.85      0.81      0.83        21
+    Excellent       1.00      1.00      1.00        13
+         Poor       1.00      0.94      0.97        16
+
+     accuracy                           0.89        75
+    macro avg       0.92      0.91      0.91        75
+ weighted avg       0.90      0.89      0.89        75

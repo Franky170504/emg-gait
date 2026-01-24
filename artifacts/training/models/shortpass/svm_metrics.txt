@@ -1,0 +1,16 @@
+Algorithm: svm
+Shot Category: shortpass
+Overall Accuracy: 0.9333
+F1-Macro Score: 0.9316
+
+Detailed Report:
+               precision    recall  f1-score   support
+
+      Average       1.00      0.93      0.96        14
+Below-Average       0.95      0.91      0.93        22
+    Excellent       0.88      1.00      0.93        28
+         Poor       1.00      0.82      0.90        11
+
+     accuracy                           0.93        75
+    macro avg       0.96      0.91      0.93        75
+ weighted avg       0.94      0.93      0.93        75

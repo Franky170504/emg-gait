@@ -1,0 +1,16 @@
+Algorithm: knn
+Shot Category: shortpass
+Overall Accuracy: 0.8800
+F1-Macro Score: 0.8611
+
+Detailed Report:
+               precision    recall  f1-score   support
+
+      Average       0.89      0.57      0.70        14
+Below-Average       0.96      1.00      0.98        22
+    Excellent       0.79      0.96      0.87        28
+         Poor       1.00      0.82      0.90        11
+
+     accuracy                           0.88        75
+    macro avg       0.91      0.84      0.86        75
+ weighted avg       0.89      0.88      0.87        75

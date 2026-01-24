@@ -1,0 +1,16 @@
+Algorithm: svm
+Shot Category: powershot
+Overall Accuracy: 0.8800
+F1-Macro Score: 0.8676
+
+Detailed Report:
+               precision    recall  f1-score   support
+
+      Average       1.00      1.00      1.00        23
+Below-Average       0.73      0.69      0.71        16
+    Excellent       1.00      0.94      0.97        18
+         Poor       0.75      0.83      0.79        18
+
+     accuracy                           0.88        75
+    macro avg       0.87      0.87      0.87        75
+ weighted avg       0.88      0.88      0.88        75

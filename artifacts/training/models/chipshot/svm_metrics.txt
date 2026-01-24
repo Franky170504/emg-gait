@@ -1,0 +1,16 @@
+Algorithm: svm
+Shot Category: chipshot
+Overall Accuracy: 0.9867
+F1-Macro Score: 0.9887
+
+Detailed Report:
+               precision    recall  f1-score   support
+
+      Average       1.00      1.00      1.00        13
+Below-Average       1.00      0.95      0.97        20
+    Excellent       1.00      1.00      1.00        17
+         Poor       0.96      1.00      0.98        25
+
+     accuracy                           0.99        75
+    macro avg       0.99      0.99      0.99        75
+ weighted avg       0.99      0.99      0.99        75

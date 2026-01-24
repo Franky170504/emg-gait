@@ -1,0 +1,16 @@
+Algorithm: svm
+Shot Category: curve
+Overall Accuracy: 0.8933
+F1-Macro Score: 0.8915
+
+Detailed Report:
+               precision    recall  f1-score   support
+
+      Average       0.88      0.94      0.91        32
+Below-Average       1.00      0.82      0.90        11
+    Excellent       1.00      0.88      0.93        16
+         Poor       0.78      0.88      0.82        16
+
+     accuracy                           0.89        75
+    macro avg       0.92      0.88      0.89        75
+ weighted avg       0.90      0.89      0.89        75

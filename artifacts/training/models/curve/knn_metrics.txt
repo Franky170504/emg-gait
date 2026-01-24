@@ -1,0 +1,16 @@
+Algorithm: knn
+Shot Category: curve
+Overall Accuracy: 0.7867
+F1-Macro Score: 0.6707
+
+Detailed Report:
+               precision    recall  f1-score   support
+
+      Average       0.81      0.94      0.87        32
+Below-Average       1.00      0.09      0.17        11
+    Excellent       0.62      0.94      0.75        16
+         Poor       1.00      0.81      0.90        16
+
+     accuracy                           0.79        75
+    macro avg       0.86      0.69      0.67        75
+ weighted avg       0.84      0.79      0.75        75

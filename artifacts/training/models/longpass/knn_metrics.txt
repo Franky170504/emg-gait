@@ -1,0 +1,16 @@
+Algorithm: knn
+Shot Category: longpass
+Overall Accuracy: 0.9200
+F1-Macro Score: 0.9141
+
+Detailed Report:
+               precision    recall  f1-score   support
+
+      Average       0.74      1.00      0.85        17
+Below-Average       1.00      0.71      0.83        17
+    Excellent       1.00      0.96      0.98        24
+         Poor       1.00      1.00      1.00        17
+
+     accuracy                           0.92        75
+    macro avg       0.93      0.92      0.91        75
+ weighted avg       0.94      0.92      0.92        75

@@ -1,0 +1,16 @@
+Algorithm: rf
+Shot Category: curve
+Overall Accuracy: 0.8933
+F1-Macro Score: 0.8753
+
+Detailed Report:
+               precision    recall  f1-score   support
+
+      Average       0.89      0.97      0.93        32
+Below-Average       0.89      0.73      0.80        11
+    Excellent       0.93      0.81      0.87        16
+         Poor       0.88      0.94      0.91        16
+
+     accuracy                           0.89        75
+    macro avg       0.90      0.86      0.88        75
+ weighted avg       0.89      0.89      0.89        75

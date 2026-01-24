@@ -1,0 +1,16 @@
+Algorithm: knn
+Shot Category: chipshot
+Overall Accuracy: 0.9333
+F1-Macro Score: 0.9235
+
+Detailed Report:
+               precision    recall  f1-score   support
+
+      Average       0.80      0.92      0.86        13
+Below-Average       1.00      0.90      0.95        20
+    Excellent       0.94      0.88      0.91        17
+         Poor       0.96      1.00      0.98        25
+
+     accuracy                           0.93        75
+    macro avg       0.92      0.93      0.92        75
+ weighted avg       0.94      0.93      0.93        75
