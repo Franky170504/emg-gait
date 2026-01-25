@@ -1,16 +1,15 @@
-Algorithm: xgb
-Shot Category: shortpass
-Overall Accuracy: 0.9200
-F1-Macro Score: 0.9047
+Shot: shortpass
+Model: xgb
+Accuracy: 0.8444
+Macro-F1: 0.6778
 
-Detailed Report:
                precision    recall  f1-score   support
 
-      Average       0.93      0.93      0.93        14
-Below-Average       0.96      1.00      0.98        22
-    Excellent       0.90      0.93      0.91        28
-         Poor       0.89      0.73      0.80        11
+      Average       0.78      1.00      0.88        21
+Below-Average       1.00      0.90      0.95        10
+    Excellent       0.00      0.00      0.00         5
+         Poor       0.89      0.89      0.89         9
 
-     accuracy                           0.92        75
-    macro avg       0.92      0.90      0.90        75
- weighted avg       0.92      0.92      0.92        75
+     accuracy                           0.84        45
+    macro avg       0.67      0.70      0.68        45
+ weighted avg       0.76      0.84      0.80        45

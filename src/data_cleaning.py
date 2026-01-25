@@ -91,5 +91,5 @@ class DataCleaning:
             raise CustomException(e, sys)
 
 if __name__ == "__main__":
-    data_processor = DataCleaning(TRAINING_RAW_DIR, TRAINING_PROCESSED_DIR)
+    data_processor = DataCleaning(TRAINING_RAW_DIR, TRAINING_CLEANED_DIR)
     data_processor.run()

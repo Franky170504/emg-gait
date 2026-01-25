@@ -1,16 +1,15 @@
-Algorithm: rf
-Shot Category: chipshot
-Overall Accuracy: 0.9733
-F1-Macro Score: 0.9653
+Shot: chipshot
+Model: rf
+Accuracy: 0.5429
+Macro-F1: 0.5101
 
-Detailed Report:
                precision    recall  f1-score   support
 
-      Average       1.00      0.85      0.92        13
-Below-Average       1.00      1.00      1.00        20
-    Excellent       0.89      1.00      0.94        17
-         Poor       1.00      1.00      1.00        25
+      Average       0.25      0.29      0.27         7
+Below-Average       0.82      0.90      0.86        10
+    Excellent       0.25      0.25      0.25         8
+         Poor       0.75      0.60      0.67        10
 
-     accuracy                           0.97        75
-    macro avg       0.97      0.96      0.97        75
- weighted avg       0.98      0.97      0.97        75
+     accuracy                           0.54        35
+    macro avg       0.52      0.51      0.51        35
+ weighted avg       0.56      0.54      0.55        35

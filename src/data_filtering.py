@@ -159,5 +159,5 @@ class Filtering:
             logger.error(f"Error while running the pipeline {e}")
 
 if __name__ == "__main__":
-    data_filter = Filtering(TRAINING_PROCESSED_DIR, TRAINING_FILTERED_DIR)
+    data_filter = Filtering(TRAINING_CLEANED_DIR, TRAINING_FILTERED_DIR)
     data_filter.run()

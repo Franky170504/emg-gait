@@ -1,16 +1,15 @@
-Algorithm: rf
-Shot Category: volley
-Overall Accuracy: 0.9733
-F1-Macro Score: 0.9781
+Shot: volley
+Model: rf
+Accuracy: 0.8667
+Macro-F1: 0.8663
 
-Detailed Report:
                precision    recall  f1-score   support
 
-      Average       0.96      0.96      0.96        25
-Below-Average       0.95      0.95      0.95        21
-    Excellent       1.00      1.00      1.00        13
-         Poor       1.00      1.00      1.00        16
+      Average       0.90      0.82      0.86        11
+Below-Average       0.85      0.85      0.85        13
+    Excellent       0.73      0.80      0.76        10
+         Poor       1.00      1.00      1.00        11
 
-     accuracy                           0.97        75
-    macro avg       0.98      0.98      0.98        75
- weighted avg       0.97      0.97      0.97        75
+     accuracy                           0.87        45
+    macro avg       0.87      0.87      0.87        45
+ weighted avg       0.87      0.87      0.87        45

@@ -1,16 +1,15 @@
-Algorithm: rf
-Shot Category: powershot
-Overall Accuracy: 0.8933
-F1-Macro Score: 0.8848
+Shot: powershot
+Model: rf
+Accuracy: 0.7111
+Macro-F1: 0.6476
 
-Detailed Report:
                precision    recall  f1-score   support
 
-      Average       0.92      1.00      0.96        23
-Below-Average       0.86      0.75      0.80        16
-    Excellent       1.00      0.83      0.91        18
-         Poor       0.81      0.94      0.87        18
+      Average       0.72      1.00      0.84        18
+Below-Average       0.80      0.44      0.57         9
+    Excellent       1.00      0.38      0.55         8
+         Poor       0.58      0.70      0.64        10
 
-     accuracy                           0.89        75
-    macro avg       0.90      0.88      0.88        75
- weighted avg       0.90      0.89      0.89        75
+     accuracy                           0.71        45
+    macro avg       0.78      0.63      0.65        45
+ weighted avg       0.76      0.71      0.69        45

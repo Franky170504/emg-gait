@@ -50,7 +50,7 @@ def generate_distinct_dummy_files(source_file, output_folder, time_col_name):
     # 5. Generation Loop
     print("Generating 5 distinct output files...")
     
-    for file_idx in range(1, 6):
+    for file_idx in range(1, 2):
         new_features = np.zeros_like(feature_data)
         rows, cols = feature_data.shape
 
@@ -78,7 +78,7 @@ def generate_distinct_dummy_files(source_file, output_folder, time_col_name):
         dummy_df.insert(0, time_col_name, time_data)
 
         # Save
-        output_filename = f"Player15_{file_idx}.csv"
+        output_filename = f"1_{file_idx}.csv"
         full_output_path = os.path.join(output_folder, output_filename)
         dummy_df.to_csv(full_output_path, index=False)
         
@@ -90,9 +90,9 @@ def generate_distinct_dummy_files(source_file, output_folder, time_col_name):
 
 # --- CONFIGURATION SECTION ---
 # 1. Update this to your actual file name
-SOURCE_FILE = r'artifacts\training\processed\chipshot\Player05_4.csv' 
+SOURCE_FILE = r'artifacts\training\cleaned\chipshot\Player05_4.csv' 
 # 2. This is the new folder where files will be saved
-OUTPUT_DIR = r"artifacts\training\processed\chipshot"
+OUTPUT_DIR = r"artifacts\inference"
 # 3. Update this to match your Time column header exactly
 TIME_COLUMN = 'Time'            
 
