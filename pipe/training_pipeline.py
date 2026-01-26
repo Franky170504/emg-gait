@@ -7,8 +7,8 @@ from src.standardization_clustering import Standardize_Cluster
 from src.model_training import ModelTraining
 
 if __name__ == "__main__":
-    data_processor = DataCleaning(TRAINING_RAW_DIR, TRAINING_CLEANED_DIR)
-    data_processor.run()
+    # data_processor = DataCleaning(TRAINING_RAW_DIR, TRAINING_CLEANED_DIR)
+    # data_processor.run()
 
     data_filter = Filtering(TRAINING_CLEANED_DIR, TRAINING_FILTERED_DIR)
     data_filter.run()

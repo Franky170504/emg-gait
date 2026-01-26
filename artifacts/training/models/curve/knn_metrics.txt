@@ -1,15 +1,15 @@
 Shot: curve
 Model: knn
-Accuracy: 0.4667
-Macro-F1: 0.4208
+Accuracy: 0.7867
+Macro-F1: 0.6707
 
                precision    recall  f1-score   support
 
-      Average       0.53      0.69      0.60        13
-Below-Average       0.46      0.43      0.44        14
-    Excellent       0.42      0.42      0.42        12
-         Poor       0.33      0.17      0.22         6
+      Average       0.81      0.94      0.87        32
+Below-Average       1.00      0.09      0.17        11
+    Excellent       0.62      0.94      0.75        16
+         Poor       1.00      0.81      0.90        16
 
-     accuracy                           0.47        45
-    macro avg       0.44      0.43      0.42        45
- weighted avg       0.45      0.47      0.45        45
+     accuracy                           0.79        75
+    macro avg       0.86      0.69      0.67        75
+ weighted avg       0.84      0.79      0.75        75

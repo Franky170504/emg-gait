@@ -1,15 +1,15 @@
 Shot: powershot
 Model: knn
-Accuracy: 0.5778
-Macro-F1: 0.4658
+Accuracy: 0.8267
+Macro-F1: 0.8156
 
                precision    recall  f1-score   support
 
-      Average       0.56      1.00      0.72        18
-Below-Average       0.57      0.44      0.50         9
-    Excellent       0.60      0.38      0.46         8
-         Poor       1.00      0.10      0.18        10
+      Average       0.88      1.00      0.94        23
+Below-Average       0.92      0.69      0.79        16
+    Excellent       0.68      0.83      0.75        18
+         Poor       0.87      0.72      0.79        18
 
-     accuracy                           0.58        45
-    macro avg       0.68      0.48      0.47        45
- weighted avg       0.67      0.58      0.51        45
+     accuracy                           0.83        75
+    macro avg       0.84      0.81      0.82        75
+ weighted avg       0.84      0.83      0.82        75

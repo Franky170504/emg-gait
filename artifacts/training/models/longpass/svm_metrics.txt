@@ -1,15 +1,15 @@
 Shot: longpass
 Model: svm
-Accuracy: 0.5556
-Macro-F1: 0.4855
+Accuracy: 0.8133
+Macro-F1: 0.7956
 
                precision    recall  f1-score   support
 
-      Average       0.45      0.75      0.56        12
-Below-Average       0.56      0.75      0.64        12
-    Excellent       0.00      0.00      0.00         9
-         Poor       1.00      0.58      0.74        12
+      Average       0.71      0.88      0.79        17
+Below-Average       0.65      0.65      0.65        17
+    Excellent       0.92      1.00      0.96        24
+         Poor       1.00      0.65      0.79        17
 
-     accuracy                           0.56        45
-    macro avg       0.50      0.52      0.49        45
- weighted avg       0.54      0.56      0.52        45
+     accuracy                           0.81        75
+    macro avg       0.82      0.79      0.80        75
+ weighted avg       0.83      0.81      0.81        75

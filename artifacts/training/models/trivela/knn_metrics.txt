@@ -1,15 +1,15 @@
 Shot: trivela
 Model: knn
-Accuracy: 0.6750
-Macro-F1: 0.6328
+Accuracy: 0.8133
+Macro-F1: 0.8045
 
                precision    recall  f1-score   support
 
-      Average       0.53      0.82      0.64        11
-Below-Average       0.80      0.67      0.73         6
-    Excellent       0.80      0.86      0.83        14
-         Poor       0.67      0.22      0.33         9
+      Average       0.82      0.78      0.80        18
+Below-Average       1.00      0.53      0.69        17
+    Excellent       0.64      0.90      0.75        20
+         Poor       0.95      1.00      0.98        20
 
-     accuracy                           0.68        40
-    macro avg       0.70      0.64      0.63        40
- weighted avg       0.70      0.68      0.65        40
+     accuracy                           0.81        75
+    macro avg       0.85      0.80      0.80        75
+ weighted avg       0.85      0.81      0.81        75

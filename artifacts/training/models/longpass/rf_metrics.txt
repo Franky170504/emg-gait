@@ -1,15 +1,15 @@
 Shot: longpass
 Model: rf
-Accuracy: 0.6000
-Macro-F1: 0.5322
+Accuracy: 0.8400
+Macro-F1: 0.8419
 
                precision    recall  f1-score   support
 
-      Average       0.53      0.67      0.59        12
-Below-Average       0.60      0.75      0.67        12
-    Excellent       0.00      0.00      0.00         9
-         Poor       0.91      0.83      0.87        12
+      Average       1.00      0.76      0.87        17
+Below-Average       0.79      0.65      0.71        17
+    Excellent       0.72      0.96      0.82        24
+         Poor       1.00      0.94      0.97        17
 
-     accuracy                           0.60        45
-    macro avg       0.51      0.56      0.53        45
- weighted avg       0.54      0.60      0.57        45
+     accuracy                           0.84        75
+    macro avg       0.88      0.83      0.84        75
+ weighted avg       0.86      0.84      0.84        75

@@ -1,15 +1,15 @@
 Shot: volley
 Model: svm
-Accuracy: 0.6889
-Macro-F1: 0.6816
+Accuracy: 0.8933
+Macro-F1: 0.9108
 
                precision    recall  f1-score   support
 
-      Average       0.55      0.55      0.55        11
-Below-Average       0.83      0.77      0.80        13
-    Excellent       0.36      0.40      0.38        10
-         Poor       1.00      1.00      1.00        11
+      Average       0.81      0.88      0.85        25
+Below-Average       0.85      0.81      0.83        21
+    Excellent       1.00      1.00      1.00        13
+         Poor       1.00      0.94      0.97        16
 
-     accuracy                           0.69        45
-    macro avg       0.69      0.68      0.68        45
- weighted avg       0.70      0.69      0.69        45
+     accuracy                           0.89        75
+    macro avg       0.92      0.91      0.91        75
+ weighted avg       0.90      0.89      0.89        75

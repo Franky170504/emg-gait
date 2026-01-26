@@ -1,15 +1,15 @@
 Shot: trivela
 Model: svm
-Accuracy: 0.7500
-Macro-F1: 0.7386
+Accuracy: 0.8667
+Macro-F1: 0.8683
 
                precision    recall  f1-score   support
 
-      Average       0.80      0.73      0.76        11
-Below-Average       0.83      0.83      0.83         6
-    Excellent       0.68      0.93      0.79        14
-         Poor       0.80      0.44      0.57         9
+      Average       0.68      0.94      0.79        18
+Below-Average       0.93      0.82      0.88        17
+    Excellent       0.94      0.75      0.83        20
+         Poor       1.00      0.95      0.97        20
 
-     accuracy                           0.75        40
-    macro avg       0.78      0.73      0.74        40
- weighted avg       0.76      0.75      0.74        40
+     accuracy                           0.87        75
+    macro avg       0.89      0.87      0.87        75
+ weighted avg       0.89      0.87      0.87        75
