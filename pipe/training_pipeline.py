@@ -21,5 +21,3 @@ if __name__ == "__main__":
 
     trainer = ModelTraining(TRAINING_CLUSTERS_DIR)
     trainer.run()
-
-

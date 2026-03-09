@@ -1,15 +1,15 @@
 Shot: volley
 Model: xgb
-Accuracy: 0.8533
-Macro-F1: 0.8524
+Accuracy: 0.7467
+Macro-F1: 0.7061
 
                precision    recall  f1-score   support
 
-      Average       0.73      0.88      0.80        25
-Below-Average       0.90      0.86      0.88        21
-    Excellent       1.00      0.62      0.76        13
-         Poor       0.94      1.00      0.97        16
+      Average       0.76      0.84      0.80        19
+Below-Average       0.56      0.56      0.56        16
+    Excellent       0.83      0.89      0.86        28
+         Poor       0.75      0.50      0.60        12
 
-     accuracy                           0.85        75
-    macro avg       0.89      0.84      0.85        75
- weighted avg       0.87      0.85      0.85        75
+     accuracy                           0.75        75
+    macro avg       0.73      0.70      0.71        75
+ weighted avg       0.74      0.75      0.74        75

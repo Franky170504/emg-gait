@@ -1,15 +1,15 @@
 Shot: longpass
 Model: knn
-Accuracy: 0.9200
-Macro-F1: 0.9141
+Accuracy: 0.8667
+Macro-F1: 0.8671
 
                precision    recall  f1-score   support
 
-      Average       0.74      1.00      0.85        17
-Below-Average       1.00      0.71      0.83        17
-    Excellent       1.00      0.96      0.98        24
-         Poor       1.00      1.00      1.00        17
+      Average       0.86      0.86      0.86        14
+Below-Average       0.83      0.94      0.88        16
+    Excellent       0.83      0.89      0.86        28
+         Poor       1.00      0.76      0.87        17
 
-     accuracy                           0.92        75
-    macro avg       0.93      0.92      0.91        75
- weighted avg       0.94      0.92      0.92        75
+     accuracy                           0.87        75
+    macro avg       0.88      0.86      0.87        75
+ weighted avg       0.88      0.87      0.87        75

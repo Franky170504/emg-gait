@@ -148,12 +148,15 @@ class FeatureExtraction:
         
 
     def find_csv_files(self, root_dir):
-        fl = []
-        for root, _, files in os.walk(root_dir):
-            for f in files:
-                if f.lower().endswith(".csv"):
-                    fl.append(os.path.join(root, f))
-        return sorted(fl)
+        try:
+            fl = []
+            for root, _, files in os.walk(root_dir):
+                for f in files:
+                    if f.lower().endswith(".csv"):
+                        fl.append(os.path.join(root, f))
+            return sorted(fl)
+        except Exception as e:
+            logger.error(f"Failed processing: {e}")
     
     def run(self):
         try:

@@ -30,6 +30,5 @@ if __name__ == "__main__":
     player_name=player_name,
     model_name="knn"
     )
-
     inference.run()
 

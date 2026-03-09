@@ -1,15 +1,15 @@
 Shot: volley
 Model: rf
-Accuracy: 0.9733
-Macro-F1: 0.9781
+Accuracy: 0.8933
+Macro-F1: 0.8943
 
                precision    recall  f1-score   support
 
-      Average       0.96      0.96      0.96        25
-Below-Average       0.95      0.95      0.95        21
-    Excellent       1.00      1.00      1.00        13
-         Poor       1.00      1.00      1.00        16
+      Average       0.94      0.84      0.89        19
+Below-Average       0.88      0.88      0.88        16
+    Excellent       0.87      0.93      0.90        28
+         Poor       0.92      0.92      0.92        12
 
-     accuracy                           0.97        75
-    macro avg       0.98      0.98      0.98        75
- weighted avg       0.97      0.97      0.97        75
+     accuracy                           0.89        75
+    macro avg       0.90      0.89      0.89        75
+ weighted avg       0.90      0.89      0.89        75

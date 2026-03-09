@@ -29,20 +29,20 @@ class Inference:
         self.model_dir = Path(TRAINING_MODELS_DIR) / self.shot_name
 
     def resolve_feature_csv(self):
-        if self.player_name is None:
-            raise RuntimeError("player_name must be provided for inference")
+        if self.shot_name is None:
+            raise RuntimeError("shot_name must be provided for inference")
 
-        player_dir = self.feature_root_dir / self.shot_name
+        shot_dir = self.feature_root_dir / self.shot_name
 
-        if not player_dir.exists():
-            raise FileNotFoundError(f"Player feature directory not found: {player_dir}")
+        if not shot_dir.exists():
+            raise FileNotFoundError(f"shot feature directory not found: {shot_dir}")
 
-        csv_files = list(player_dir.glob("*.csv"))
+        csv_files = list(shot_dir.glob("*.csv"))
 
         if len(csv_files) == 0:
-            raise FileNotFoundError(f"No feature CSV found in {player_dir}")
+            raise FileNotFoundError(f"No feature CSV found in {shot_dir}")
         if len(csv_files) > 1:
-            raise RuntimeError(f"Multiple feature CSVs found in {player_dir}, expected 1")
+            raise RuntimeError(f"Multiple feature CSVs found in {shot_dir}, expected 1")
 
         return csv_files[0]
 
@@ -129,7 +129,7 @@ if __name__ == "__main__":
     )
     player_name = input("Enter Playername: ")
 
-    feature_csv = "artifacts/inference/features/player_name/trial_1_features.csv"
+    feature_csv = "artifacts/inference/features/shot_name/trial_1_features.csv"
 
     inference = Inference(shot_name=shot_name,
         player_name=player_name,

@@ -1,15 +1,15 @@
 Shot: volley
 Model: knn
-Accuracy: 0.9467
-Macro-F1: 0.9487
+Accuracy: 0.8667
+Macro-F1: 0.8683
 
                precision    recall  f1-score   support
 
-      Average       0.92      0.92      0.92        25
-Below-Average       1.00      1.00      1.00        21
-    Excellent       1.00      1.00      1.00        13
-         Poor       0.88      0.88      0.88        16
+      Average       0.88      0.74      0.80        19
+Below-Average       0.88      0.88      0.88        16
+    Excellent       0.84      0.93      0.88        28
+         Poor       0.92      0.92      0.92        12
 
-     accuracy                           0.95        75
-    macro avg       0.95      0.95      0.95        75
- weighted avg       0.95      0.95      0.95        75
+     accuracy                           0.87        75
+    macro avg       0.88      0.86      0.87        75
+ weighted avg       0.87      0.87      0.87        75

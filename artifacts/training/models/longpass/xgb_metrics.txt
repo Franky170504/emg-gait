@@ -1,15 +1,15 @@
 Shot: longpass
 Model: xgb
-Accuracy: 0.7733
-Macro-F1: 0.7689
+Accuracy: 0.8267
+Macro-F1: 0.8338
 
                precision    recall  f1-score   support
 
-      Average       0.72      0.76      0.74        17
-Below-Average       0.92      0.65      0.76        17
-    Excellent       0.71      0.92      0.80        24
-         Poor       0.86      0.71      0.77        17
+      Average       0.79      0.79      0.79        14
+Below-Average       0.78      0.88      0.82        16
+    Excellent       0.80      0.71      0.75        28
+         Poor       0.94      1.00      0.97        17
 
-     accuracy                           0.77        75
-    macro avg       0.80      0.76      0.77        75
- weighted avg       0.79      0.77      0.77        75
+     accuracy                           0.83        75
+    macro avg       0.83      0.84      0.83        75
+ weighted avg       0.83      0.83      0.82        75
