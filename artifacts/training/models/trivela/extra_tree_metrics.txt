@@ -1,0 +1,15 @@
+Shot: trivela
+Model: extra_tree
+Accuracy: 0.7733
+Macro-F1: 0.7664
+
+               precision    recall  f1-score   support
+
+      Average       0.69      0.85      0.76        26
+Below-Average       1.00      0.79      0.88        14
+    Excellent       0.78      0.50      0.61        14
+         Poor       0.78      0.86      0.82        21
+
+     accuracy                           0.77        75
+    macro avg       0.81      0.75      0.77        75
+ weighted avg       0.79      0.77      0.77        75

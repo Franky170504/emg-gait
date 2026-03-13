@@ -1,0 +1,15 @@
+Shot: volley
+Model: cat_boost
+Accuracy: 0.9333
+Macro-F1: 0.9316
+
+               precision    recall  f1-score   support
+
+      Average       0.95      0.95      0.95        19
+Below-Average       0.88      0.88      0.88        16
+    Excellent       0.93      0.96      0.95        28
+         Poor       1.00      0.92      0.96        12
+
+     accuracy                           0.93        75
+    macro avg       0.94      0.93      0.93        75
+ weighted avg       0.93      0.93      0.93        75

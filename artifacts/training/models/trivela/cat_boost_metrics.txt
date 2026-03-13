@@ -1,0 +1,15 @@
+Shot: trivela
+Model: cat_boost
+Accuracy: 0.7467
+Macro-F1: 0.7312
+
+               precision    recall  f1-score   support
+
+      Average       0.70      0.88      0.78        26
+Below-Average       0.91      0.71      0.80        14
+    Excellent       0.70      0.50      0.58        14
+         Poor       0.76      0.76      0.76        21
+
+     accuracy                           0.75        75
+    macro avg       0.77      0.72      0.73        75
+ weighted avg       0.76      0.75      0.74        75

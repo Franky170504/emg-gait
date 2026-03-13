@@ -1,0 +1,15 @@
+Shot: chipshot
+Model: stacking
+Accuracy: 0.9600
+Macro-F1: 0.9520
+
+               precision    recall  f1-score   support
+
+      Average       0.85      1.00      0.92        17
+Below-Average       1.00      1.00      1.00        28
+    Excellent       1.00      0.80      0.89        15
+         Poor       1.00      1.00      1.00        15
+
+     accuracy                           0.96        75
+    macro avg       0.96      0.95      0.95        75
+ weighted avg       0.97      0.96      0.96        75

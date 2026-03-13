@@ -1,0 +1,15 @@
+Shot: volley
+Model: gradient_boost
+Accuracy: 0.8000
+Macro-F1: 0.8003
+
+               precision    recall  f1-score   support
+
+      Average       0.89      0.84      0.86        19
+Below-Average       0.71      0.62      0.67        16
+    Excellent       0.75      0.86      0.80        28
+         Poor       0.91      0.83      0.87        12
+
+     accuracy                           0.80        75
+    macro avg       0.82      0.79      0.80        75
+ weighted avg       0.80      0.80      0.80        75

@@ -1,0 +1,15 @@
+Shot: curve
+Model: voting
+Accuracy: 0.7867
+Macro-F1: 0.7732
+
+               precision    recall  f1-score   support
+
+      Average       0.93      0.88      0.90        16
+Below-Average       0.66      1.00      0.79        25
+    Excellent       0.78      0.47      0.58        15
+         Poor       1.00      0.68      0.81        19
+
+     accuracy                           0.79        75
+    macro avg       0.84      0.76      0.77        75
+ weighted avg       0.83      0.79      0.78        75

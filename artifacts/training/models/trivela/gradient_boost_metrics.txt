@@ -1,0 +1,15 @@
+Shot: trivela
+Model: gradient_boost
+Accuracy: 0.6267
+Macro-F1: 0.6219
+
+               precision    recall  f1-score   support
+
+      Average       0.62      0.77      0.69        26
+Below-Average       0.58      0.50      0.54        14
+    Excellent       0.79      0.79      0.79        14
+         Poor       0.53      0.43      0.47        21
+
+     accuracy                           0.63        75
+    macro avg       0.63      0.62      0.62        75
+ weighted avg       0.62      0.63      0.62        75

@@ -1,0 +1,15 @@
+Shot: shortpass
+Model: cat_boost
+Accuracy: 0.9467
+Macro-F1: 0.9350
+
+               precision    recall  f1-score   support
+
+      Average       0.92      1.00      0.96        24
+Below-Average       0.94      1.00      0.97        29
+    Excellent       1.00      0.88      0.93         8
+         Poor       1.00      0.79      0.88        14
+
+     accuracy                           0.95        75
+    macro avg       0.96      0.92      0.94        75
+ weighted avg       0.95      0.95      0.94        75

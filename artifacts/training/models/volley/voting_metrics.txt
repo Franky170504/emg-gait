@@ -1,0 +1,15 @@
+Shot: volley
+Model: voting
+Accuracy: 0.8800
+Macro-F1: 0.8792
+
+               precision    recall  f1-score   support
+
+      Average       0.89      0.84      0.86        19
+Below-Average       0.87      0.81      0.84        16
+    Excellent       0.87      0.93      0.90        28
+         Poor       0.92      0.92      0.92        12
+
+     accuracy                           0.88        75
+    macro avg       0.88      0.87      0.88        75
+ weighted avg       0.88      0.88      0.88        75

@@ -1,0 +1,15 @@
+Shot: powershot
+Model: extra_tree
+Accuracy: 0.9067
+Macro-F1: 0.9053
+
+               precision    recall  f1-score   support
+
+      Average       1.00      0.86      0.92        14
+Below-Average       0.89      0.89      0.89         9
+    Excellent       0.90      0.90      0.90        20
+         Poor       0.88      0.94      0.91        32
+
+     accuracy                           0.91        75
+    macro avg       0.92      0.90      0.91        75
+ weighted avg       0.91      0.91      0.91        75

@@ -1,0 +1,15 @@
+Shot: volley
+Model: stacking
+Accuracy: 0.8933
+Macro-F1: 0.8943
+
+               precision    recall  f1-score   support
+
+      Average       0.94      0.79      0.86        19
+Below-Average       0.93      0.88      0.90        16
+    Excellent       0.84      0.96      0.90        28
+         Poor       0.92      0.92      0.92        12
+
+     accuracy                           0.89        75
+    macro avg       0.91      0.89      0.89        75
+ weighted avg       0.90      0.89      0.89        75

@@ -1,0 +1,15 @@
+Shot: powershot
+Model: cat_boost
+Accuracy: 0.8667
+Macro-F1: 0.8387
+
+               precision    recall  f1-score   support
+
+      Average       0.79      0.79      0.79        14
+Below-Average       0.86      0.67      0.75         9
+    Excellent       0.90      0.95      0.93        20
+         Poor       0.88      0.91      0.89        32
+
+     accuracy                           0.87        75
+    macro avg       0.86      0.83      0.84        75
+ weighted avg       0.87      0.87      0.86        75

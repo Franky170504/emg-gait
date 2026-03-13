@@ -1,0 +1,15 @@
+Shot: curve
+Model: extra_tree
+Accuracy: 0.8400
+Macro-F1: 0.8313
+
+               precision    recall  f1-score   support
+
+      Average       0.93      0.81      0.87        16
+Below-Average       0.76      1.00      0.86        25
+    Excellent       0.77      0.67      0.71        15
+         Poor       1.00      0.79      0.88        19
+
+     accuracy                           0.84        75
+    macro avg       0.86      0.82      0.83        75
+ weighted avg       0.86      0.84      0.84        75

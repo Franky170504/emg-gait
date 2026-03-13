@@ -1,0 +1,15 @@
+Shot: shortpass
+Model: extra_tree
+Accuracy: 0.9333
+Macro-F1: 0.9175
+
+               precision    recall  f1-score   support
+
+      Average       0.92      0.96      0.94        24
+Below-Average       0.91      1.00      0.95        29
+    Excellent       1.00      0.75      0.86         8
+         Poor       1.00      0.86      0.92        14
+
+     accuracy                           0.93        75
+    macro avg       0.96      0.89      0.92        75
+ weighted avg       0.94      0.93      0.93        75

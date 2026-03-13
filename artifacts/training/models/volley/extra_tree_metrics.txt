@@ -1,0 +1,15 @@
+Shot: volley
+Model: extra_tree
+Accuracy: 0.9067
+Macro-F1: 0.9055
+
+               precision    recall  f1-score   support
+
+      Average       0.94      0.79      0.86        19
+Below-Average       0.88      0.88      0.88        16
+    Excellent       0.88      1.00      0.93        28
+         Poor       1.00      0.92      0.96        12
+
+     accuracy                           0.91        75
+    macro avg       0.92      0.90      0.91        75
+ weighted avg       0.91      0.91      0.91        75

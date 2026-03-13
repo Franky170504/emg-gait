@@ -11,6 +11,16 @@ from sklearn.base import clone
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.ensemble import ExtraTreesClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import GradientBoostingClassifier
+from catboost import CatBoostClassifier
+from sklearn.ensemble import VotingClassifier
+from sklearn.ensemble import StackingClassifier
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+from sklearn.pipeline import Pipeline
+from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
+from sklearn.naive_bayes import GaussianNB
 import xgboost as xgb
 
 from src.custom_exception import CustomException
@@ -41,27 +51,92 @@ class ModelTraining:
     # MODELS
     # ------------------------------------------------------------------
     def get_models(self, n_classes):
+
+    # ---------- Base Models ----------
+        rf_model = RandomForestClassifier(
+            n_estimators=500,
+            class_weight="balanced",
+            random_state=self.RANDOM_STATE,
+            n_jobs=-1
+        )
+
+        svm_model = SVC(
+            kernel="rbf",
+            probability=True,
+            class_weight="balanced",
+            random_state=self.RANDOM_STATE
+        )
+
+        knn_model = KNeighborsClassifier(
+            n_neighbors=5
+        )
+
+        xgb_model = xgb.XGBClassifier(
+            objective="multi:softprob",
+            num_class=n_classes,
+            n_estimators=500,
+            eval_metric="mlogloss",
+            random_state=self.RANDOM_STATE
+        )
+
+        extra_tree_model = ExtraTreesClassifier(
+            n_estimators=500,
+            random_state=self.RANDOM_STATE,
+            n_jobs=-1
+        )
+
+        gradient_boost_model = GradientBoostingClassifier(
+            n_estimators=200,
+            learning_rate=0.05
+        )
+
+        cat_boost_model = CatBoostClassifier(
+            iterations=300,
+            depth=6,
+            learning_rate=0.05,
+            loss_function="MultiClass",
+            verbose=0
+        )
+
+        gnb_model = GaussianNB()
+
+        # ---------- Ensemble Models ----------
+
+        voting_model = VotingClassifier(
+            estimators=[
+                ("rf", rf_model),
+                ("svm", svm_model),
+                ("xgb", xgb_model)
+            ],
+            voting="soft",
+            n_jobs=-1
+        )
+
+        stacking_model = StackingClassifier(
+            estimators=[
+                ("rf", rf_model),
+                ("svm", svm_model),
+                ("xgb", xgb_model),
+                ("knn", knn_model)
+            ],
+            final_estimator=LogisticRegression(max_iter=2000),
+            n_jobs=-1
+        )
+
+        # ---------- Model Dictionary ----------
         return {
-            "rf": RandomForestClassifier(
-                n_estimators=500,
-                class_weight="balanced",
-                random_state=self.RANDOM_STATE,
-                n_jobs=-1
-            ),
-            "svm": SVC(
-                kernel="rbf",
-                probability=True,
-                class_weight="balanced",
-                random_state=self.RANDOM_STATE
-            ),
-            "knn": KNeighborsClassifier(n_neighbors=5),
-            "xgb": xgb.XGBClassifier(
-                objective="multi:softprob",
-                num_class=n_classes,
-                n_estimators=200,
-                eval_metric="mlogloss",
-                random_state=self.RANDOM_STATE
-            )
+            "rf": rf_model,
+            "svm": svm_model,
+            "knn": knn_model,
+            "xgb": xgb_model,
+            "extra_tree": extra_tree_model,
+            "gradient_boost": gradient_boost_model,
+            "cat_boost": cat_boost_model,
+            # "lda": lda_model,
+            # "qda": qda_model,
+            "gaussian_nb": gnb_model,
+            "voting": voting_model,
+            "stacking": stacking_model
         }
 
     # ------------------------------------------------------------------

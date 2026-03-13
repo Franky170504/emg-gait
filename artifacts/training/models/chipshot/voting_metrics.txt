@@ -1,0 +1,15 @@
+Shot: chipshot
+Model: voting
+Accuracy: 0.9467
+Macro-F1: 0.9352
+
+               precision    recall  f1-score   support
+
+      Average       0.81      1.00      0.89        17
+Below-Average       1.00      1.00      1.00        28
+    Excellent       1.00      0.73      0.85        15
+         Poor       1.00      1.00      1.00        15
+
+     accuracy                           0.95        75
+    macro avg       0.95      0.93      0.94        75
+ weighted avg       0.96      0.95      0.95        75

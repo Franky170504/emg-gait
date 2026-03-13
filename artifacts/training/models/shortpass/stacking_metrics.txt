@@ -1,0 +1,15 @@
+Shot: shortpass
+Model: stacking
+Accuracy: 0.9333
+Macro-F1: 0.9131
+
+               precision    recall  f1-score   support
+
+      Average       0.96      1.00      0.98        24
+Below-Average       0.88      1.00      0.94        29
+    Excellent       1.00      0.75      0.86         8
+         Poor       1.00      0.79      0.88        14
+
+     accuracy                           0.93        75
+    macro avg       0.96      0.88      0.91        75
+ weighted avg       0.94      0.93      0.93        75

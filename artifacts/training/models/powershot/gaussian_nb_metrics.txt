@@ -1,0 +1,15 @@
+Shot: powershot
+Model: gaussian_nb
+Accuracy: 0.8933
+Macro-F1: 0.8968
+
+               precision    recall  f1-score   support
+
+      Average       0.88      1.00      0.93        14
+Below-Average       0.89      0.89      0.89         9
+    Excellent       0.83      0.95      0.88        20
+         Poor       0.96      0.81      0.88        32
+
+     accuracy                           0.89        75
+    macro avg       0.89      0.91      0.90        75
+ weighted avg       0.90      0.89      0.89        75

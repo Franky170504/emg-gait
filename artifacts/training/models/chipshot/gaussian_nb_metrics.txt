@@ -1,0 +1,15 @@
+Shot: chipshot
+Model: gaussian_nb
+Accuracy: 0.9333
+Macro-F1: 0.9234
+
+               precision    recall  f1-score   support
+
+      Average       0.89      1.00      0.94        17
+Below-Average       0.90      1.00      0.95        28
+    Excellent       1.00      0.67      0.80        15
+         Poor       1.00      1.00      1.00        15
+
+     accuracy                           0.93        75
+    macro avg       0.95      0.92      0.92        75
+ weighted avg       0.94      0.93      0.93        75

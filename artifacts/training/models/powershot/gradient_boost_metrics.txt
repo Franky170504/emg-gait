@@ -1,0 +1,15 @@
+Shot: powershot
+Model: gradient_boost
+Accuracy: 0.8133
+Macro-F1: 0.7693
+
+               precision    recall  f1-score   support
+
+      Average       0.89      0.57      0.70        14
+Below-Average       0.71      0.56      0.62         9
+    Excellent       0.95      0.90      0.92        20
+         Poor       0.75      0.94      0.83        32
+
+     accuracy                           0.81        75
+    macro avg       0.83      0.74      0.77        75
+ weighted avg       0.82      0.81      0.81        75

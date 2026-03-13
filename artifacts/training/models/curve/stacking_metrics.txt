@@ -1,0 +1,15 @@
+Shot: curve
+Model: stacking
+Accuracy: 0.7733
+Macro-F1: 0.7813
+
+               precision    recall  f1-score   support
+
+      Average       0.80      0.75      0.77        16
+Below-Average       0.63      0.88      0.73        25
+    Excellent       0.91      0.67      0.77        15
+         Poor       1.00      0.74      0.85        19
+
+     accuracy                           0.77        75
+    macro avg       0.83      0.76      0.78        75
+ weighted avg       0.82      0.77      0.78        75

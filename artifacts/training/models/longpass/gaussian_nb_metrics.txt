@@ -1,0 +1,15 @@
+Shot: longpass
+Model: gaussian_nb
+Accuracy: 0.7600
+Macro-F1: 0.7408
+
+               precision    recall  f1-score   support
+
+      Average       0.90      0.64      0.75        14
+Below-Average       0.85      0.69      0.76        16
+    Excellent       0.68      1.00      0.81        28
+         Poor       0.82      0.53      0.64        17
+
+     accuracy                           0.76        75
+    macro avg       0.81      0.71      0.74        75
+ weighted avg       0.79      0.76      0.75        75

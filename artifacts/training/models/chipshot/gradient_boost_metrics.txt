@@ -1,0 +1,15 @@
+Shot: chipshot
+Model: gradient_boost
+Accuracy: 0.9867
+Macro-F1: 0.9842
+
+               precision    recall  f1-score   support
+
+      Average       0.94      1.00      0.97        17
+Below-Average       1.00      1.00      1.00        28
+    Excellent       1.00      0.93      0.97        15
+         Poor       1.00      1.00      1.00        15
+
+     accuracy                           0.99        75
+    macro avg       0.99      0.98      0.98        75
+ weighted avg       0.99      0.99      0.99        75
