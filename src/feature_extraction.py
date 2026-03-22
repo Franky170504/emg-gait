@@ -6,6 +6,7 @@ from scipy.signal import welch
 from scipy.ndimage import uniform_filter1d
 from tqdm import tqdm
 from pathlib import Path
+from scipy.integrate import trapezoid
 
 from src.custom_exception import CustomException
 from src.logger import get_logger
@@ -73,8 +74,7 @@ class FeatureExtraction:
             "mav":  float(np.mean(np.abs(x))),
             "wl":   float(np.sum(np.abs(np.diff(x)))),
             "peak": float(np.max(x)),
-            "iEMG": float(np.trapz(np.abs(x)))  # numeric integral
-        }
+            "iEMG": float(trapezoid(np.abs(x)))        }
 
     def extract_freq_features(self, x):
         x = np.asarray(x).astype(float)
@@ -94,48 +94,63 @@ class FeatureExtraction:
     
     def process_file_to_features(self, path):
         """Processes a single file and returns a dictionary of features."""
-        df = pd.read_csv(path)
-        df = self.canonicalize_emg_df(df, self.CANONICAL_CHANNEL_ORDER) 
-        
-        # NEW: Determine Shot Type from the folder structure
-        # This assumes path is: data/filtered/shot_type/player_1.csv
-        relative_path = Path(path).relative_to(self.filtered_dir)
-        shot_type = relative_path.parts[0] # Extracts 'chipshot'
-        
+        try:
+            df = pd.read_csv(path)
+        except Exception as e:
+            print(f"ERROR reading CSV: {path}")
+            print(e)
+            raise e
+
+        df = self.canonicalize_emg_df(df, self.CANONICAL_CHANNEL_ORDER)
+
+        # ✅ FIX: robust shot_type extraction
+        try:
+            relative_path = Path(path).resolve().relative_to(self.filtered_dir.resolve())
+            shot_type = relative_path.parts[0]
+        except Exception:
+            shot_type = "unknown"
+
         time_cols = [c for c in df.columns if 'time' in c.lower() or 'timestamp' in c.lower()]
         time_col = time_cols[0] if time_cols else None
         emg_cols = [c for c in df.columns if c != time_col]
+
         n_samples = df.shape[0]
 
         row = {
             'file': str(path),
-            'shot_type': shot_type, # NEW: Added to row for grouping
+            'shot_type': shot_type,
             'n_samples': n_samples,
             'fs_used': self.FS
         }
 
-        # Extract Player Name from filename (e.g., 'jordan' from 'jordan_1.csv')
+        # Extract player name
         stem = Path(path).stem
         row['player'] = stem.split("_")[0] if "_" in stem else shot_type
+
         per_channel_data = {}
-        channel_means = {}
         channel_peaks = {}
 
         for ch in emg_cols:
-            x = pd.to_numeric(df[ch], errors='coerce').fillna(0).values.astype(float)
+            try:
+                x = pd.to_numeric(df[ch], errors='coerce').fillna(0).values.astype(float)
+            except Exception as e:
+                print(f"ERROR in channel conversion: {ch} in {path}")
+                print(e)
+                raise e
+
             per_channel_data[ch] = {}
             per_channel_data[ch].update(self.extract_time_features(x))
             per_channel_data[ch].update(self.extract_freq_features(x))
-            
+
             mr = self.moving_rms(x, self.RMS_WINDOW_SAMPLES)
             per_channel_data[ch]['mrms_mean'] = float(np.mean(mr))
             per_channel_data[ch]['mrms_peak'] = float(np.max(mr))
-            
-            channel_means[ch] = per_channel_data[ch].get('mean', np.nan)
+
             channel_peaks[ch] = per_channel_data[ch].get('peak', np.nan)
 
         trial_peak = np.nanmax(list(channel_peaks.values())) if channel_peaks else 1.0
-        if trial_peak == 0: trial_peak = 1.0
+        if trial_peak == 0:
+            trial_peak = 1.0
 
         for ch in emg_cols:
             for k, v in per_channel_data[ch].items():
@@ -144,9 +159,9 @@ class FeatureExtraction:
                     row[f"{ch}__{k}_rel"] = v / trial_peak
 
         row['trial_peak_of_channel_peaks'] = float(trial_peak)
+
         return row
         
-
     def find_csv_files(self, root_dir):
         try:
             fl = []
@@ -159,45 +174,79 @@ class FeatureExtraction:
             logger.error(f"Failed processing: {e}")
     
     def run(self):
+        print("STEP 1: Entered run()")
+
         try:
+            # ✅ Validate input directory
+            if not self.filtered_dir.exists():
+                raise ValueError(f"Filtered directory does not exist: {self.filtered_dir}")
+
+            print("STEP 2: About to list files")
+
             files = sorted(list(self.filtered_dir.rglob('*.csv')))
-            logger.info(f"Found {len(files)} files for feature extraction.")
-            
+            print(f"STEP 3: Files listed: {len(files)}")
+
+            if not files:
+                raise ValueError("No CSV files found in filtered directory.")
+
+            # ✅ Ensure base feature dir exists
+            self.feature_dir.mkdir(parents=True, exist_ok=True)
+
             all_features = []
-            
-            # Step 1: Extract features from all files and build a master list
+            print("STEP 4: all_features initialized")
+
+            # Step 1: Extract features
             for p in tqdm(files, desc="Extracting Features"):
                 try:
                     feat_row = self.process_file_to_features(p)
                     if feat_row:
                         all_features.append(feat_row)
                 except Exception as e:
-                    logger.error(f"Failed processing {p}: {e}")
+                    print(f"\nERROR processing file: {p}")
+                    print(e)
+                    raise e  # 🔴 do NOT silently ignore
+
+            print("STEP 5: Feature extraction loop complete")
+            print("Total rows collected:", len(all_features))
 
             if not all_features:
-                logger.warning("No features extracted.")
-                return
+                raise ValueError("No features extracted — all files failed.")
 
-            # Convert to master DataFrame
+            # Step 2: Create DataFrame
             df_master = pd.DataFrame(all_features)
 
-            # Step 2: Loop through unique shot types to create separate sub-folders
-            shot_types = df_master['shot_type'].unique()
-            
+            print("STEP 6: DataFrame created")
+            print("Shape:", df_master.shape)
+            print("Columns:", df_master.columns.tolist())
+
+            # ✅ Validate column exists
+            if 'shot_type' not in df_master.columns:
+                raise ValueError("Missing 'shot_type' column in extracted features.")
+
+            # Step 3: Group by shot type
+            shot_types = df_master['shot_type'].dropna().unique()
+            print("STEP 7: Shot types:", shot_types)
+
+            if len(shot_types) == 0:
+                raise ValueError("No valid shot types found.")
+
+            # Step 4: Save features
             for shot in shot_types:
-                # Filter data for this specific shot type
                 shot_df = df_master[df_master['shot_type'] == shot].copy()
-                shot_dir = self.feature_dir / shot
-                shot_dir.mkdir(parents=True, exist_ok=True) # Create 'data/features/chipshot/'
 
-                # Save CSV specific to this shot type
-                shot_df.to_csv(shot_dir / "features_master.csv", index=False)
+                shot_dir = self.feature_dir / str(shot)
+                shot_dir.mkdir(parents=True, exist_ok=True)
 
+                output_path = shot_dir / "features_master.csv"
+                shot_df.to_csv(output_path, index=False)
 
-                # Save the segmented Numpy files and column names
-                logger.info(f"Successfully exported {shot} features to {shot_dir}")
+                print(f"Saved: {output_path}")
+
+            print("STEP 8: All features saved successfully")
 
         except Exception as e:
+            print("\n🔥 FINAL ERROR IN RUN():")
+            print(e)
             raise CustomException(e, sys)
 
 if __name__ == "__main__":

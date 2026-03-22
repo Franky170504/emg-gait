@@ -12,8 +12,8 @@ from config.path_config import *
 logger = get_logger(__name__)
 
 class Filtering:
-    def __init__(self, processed_dir, filtered_dir):
-        self.processed_dir = Path(processed_dir)
+    def __init__(self, cleaned_dir, filtered_dir):
+        self.cleaned_dir = Path(cleaned_dir)
         self.filtered_dir = Path(filtered_dir)
         self.FS = 2148.1481            
         self.NOTCH_FREQ = 50.0
@@ -142,11 +142,11 @@ class Filtering:
 
     def run(self):
         try:
-            src_files = self.find_csv_files(self.processed_dir)
+            src_files = self.find_csv_files(self.cleaned_dir)
             logger.info(f"Staring with data filtering")            
 
             for src in tqdm(src_files, desc="Filtering Data"):
-                rel = os.path.relpath(src, self.processed_dir)
+                rel = os.path.relpath(src, self.cleaned_dir)
                 dst = os.path.join(self.filtered_dir, rel)
                 try:
                     self.preprocess_and_save(src, dst)

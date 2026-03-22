@@ -17,9 +17,7 @@ from sklearn.ensemble import GradientBoostingClassifier
 from catboost import CatBoostClassifier
 from sklearn.ensemble import VotingClassifier
 from sklearn.ensemble import StackingClassifier
-from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.pipeline import Pipeline
-from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
 from sklearn.naive_bayes import GaussianNB
 import xgboost as xgb
 
@@ -57,7 +55,7 @@ class ModelTraining:
             n_estimators=500,
             class_weight="balanced",
             random_state=self.RANDOM_STATE,
-            n_jobs=-1
+            n_jobs=1
         )
 
         svm_model = SVC(
@@ -82,7 +80,7 @@ class ModelTraining:
         extra_tree_model = ExtraTreesClassifier(
             n_estimators=500,
             random_state=self.RANDOM_STATE,
-            n_jobs=-1
+            n_jobs=1
         )
 
         gradient_boost_model = GradientBoostingClassifier(
@@ -132,8 +130,6 @@ class ModelTraining:
             "extra_tree": extra_tree_model,
             "gradient_boost": gradient_boost_model,
             "cat_boost": cat_boost_model,
-            # "lda": lda_model,
-            # "qda": qda_model,
             "gaussian_nb": gnb_model,
             "voting": voting_model,
             "stacking": stacking_model

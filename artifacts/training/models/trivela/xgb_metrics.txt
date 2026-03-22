@@ -1,15 +1,15 @@
 Shot: trivela
 Model: xgb
-Accuracy: 0.5733
-Macro-F1: 0.5322
+Accuracy: 0.5867
+Macro-F1: 0.5411
 
                precision    recall  f1-score   support
 
-      Average       0.65      0.77      0.70        26
+      Average       0.66      0.81      0.72        26
 Below-Average       0.64      0.64      0.64        14
-    Excellent       0.38      0.21      0.27        14
+    Excellent       0.43      0.21      0.29        14
          Poor       0.50      0.52      0.51        21
 
-     accuracy                           0.57        75
-    macro avg       0.54      0.54      0.53        75
- weighted avg       0.55      0.57      0.56        75
+     accuracy                           0.59        75
+    macro avg       0.56      0.55      0.54        75
+ weighted avg       0.57      0.59      0.57        75
