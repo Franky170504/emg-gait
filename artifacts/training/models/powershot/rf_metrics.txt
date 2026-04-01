@@ -1,7 +1,9 @@
 Shot: powershot
 Model: rf
 Accuracy: 0.8533
-Macro-F1: 0.8404
+Precision: 0.8505
+Recall: 0.8392
+F1-score: 0.8404
 
                precision    recall  f1-score   support
 

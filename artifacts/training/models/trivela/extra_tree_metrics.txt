@@ -1,7 +1,9 @@
 Shot: trivela
 Model: extra_tree
 Accuracy: 0.7733
-Macro-F1: 0.7664
+Precision: 0.8120
+Recall: 0.7473
+F1-score: 0.7664
 
                precision    recall  f1-score   support
 

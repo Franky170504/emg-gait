@@ -1,7 +1,9 @@
 Shot: trivela
 Model: voting
 Accuracy: 0.7067
-Macro-F1: 0.6942
+Precision: 0.7181
+Recall: 0.6818
+F1-score: 0.6942
 
                precision    recall  f1-score   support
 

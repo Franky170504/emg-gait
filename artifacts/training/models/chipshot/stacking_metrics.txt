@@ -1,7 +1,9 @@
 Shot: chipshot
 Model: stacking
 Accuracy: 0.9600
-Macro-F1: 0.9520
+Precision: 0.9625
+Recall: 0.9500
+F1-score: 0.9520
 
                precision    recall  f1-score   support
 

@@ -1,7 +1,9 @@
 Shot: shortpass
 Model: voting
 Accuracy: 0.9200
-Macro-F1: 0.8993
+Precision: 0.9384
+Recall: 0.8735
+F1-score: 0.8993
 
                precision    recall  f1-score   support
 

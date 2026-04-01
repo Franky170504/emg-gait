@@ -1,7 +1,9 @@
 Shot: powershot
 Model: knn
 Accuracy: 0.8133
-Macro-F1: 0.7799
+Precision: 0.7898
+Recall: 0.7718
+F1-score: 0.7799
 
                precision    recall  f1-score   support
 

@@ -1,7 +1,9 @@
 Shot: chipshot
 Model: knn
 Accuracy: 0.9200
-Macro-F1: 0.9113
+Precision: 0.9307
+Recall: 0.9039
+F1-score: 0.9113
 
                precision    recall  f1-score   support
 

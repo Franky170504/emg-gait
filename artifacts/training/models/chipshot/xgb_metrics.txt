@@ -1,7 +1,9 @@
 Shot: chipshot
 Model: xgb
 Accuracy: 0.9733
-Macro-F1: 0.9706
+Precision: 0.9775
+Recall: 0.9667
+F1-score: 0.9706
 
                precision    recall  f1-score   support
 

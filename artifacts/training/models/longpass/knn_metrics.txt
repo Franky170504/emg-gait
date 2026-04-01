@@ -1,7 +1,9 @@
 Shot: longpass
 Model: knn
 Accuracy: 0.8667
-Macro-F1: 0.8671
+Precision: 0.8810
+Recall: 0.8631
+F1-score: 0.8671
 
                precision    recall  f1-score   support
 

@@ -1,7 +1,9 @@
 Shot: volley
 Model: extra_tree
 Accuracy: 0.9067
-Macro-F1: 0.9055
+Precision: 0.9219
+Recall: 0.8953
+F1-score: 0.9055
 
                precision    recall  f1-score   support
 

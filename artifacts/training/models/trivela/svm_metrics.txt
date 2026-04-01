@@ -1,7 +1,9 @@
 Shot: trivela
 Model: svm
 Accuracy: 0.8267
-Macro-F1: 0.8127
+Precision: 0.8515
+Recall: 0.7962
+F1-score: 0.8127
 
                precision    recall  f1-score   support
 

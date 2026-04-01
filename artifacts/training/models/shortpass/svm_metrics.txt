@@ -1,7 +1,9 @@
 Shot: shortpass
 Model: svm
 Accuracy: 0.9200
-Macro-F1: 0.9040
+Precision: 0.9528
+Recall: 0.8735
+F1-score: 0.9040
 
                precision    recall  f1-score   support
 

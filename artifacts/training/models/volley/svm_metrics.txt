@@ -1,7 +1,9 @@
 Shot: volley
 Model: svm
 Accuracy: 0.8800
-Macro-F1: 0.8849
+Precision: 0.8981
+Recall: 0.8764
+F1-score: 0.8849
 
                precision    recall  f1-score   support
 

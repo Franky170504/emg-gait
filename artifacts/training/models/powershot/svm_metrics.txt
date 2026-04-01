@@ -1,7 +1,9 @@
 Shot: powershot
 Model: svm
 Accuracy: 0.7733
-Macro-F1: 0.7274
+Precision: 0.7720
+Recall: 0.7177
+F1-score: 0.7274
 
                precision    recall  f1-score   support
 

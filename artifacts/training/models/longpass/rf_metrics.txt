@@ -1,7 +1,9 @@
 Shot: longpass
 Model: rf
 Accuracy: 0.8533
-Macro-F1: 0.8335
+Precision: 0.8657
+Recall: 0.8223
+F1-score: 0.8335
 
                precision    recall  f1-score   support
 

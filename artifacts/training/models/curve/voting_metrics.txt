@@ -1,7 +1,9 @@
 Shot: curve
 Model: voting
 Accuracy: 0.7867
-Macro-F1: 0.7732
+Precision: 0.8423
+Recall: 0.7565
+F1-score: 0.7732
 
                precision    recall  f1-score   support
 

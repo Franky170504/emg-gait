@@ -1,7 +1,9 @@
 Shot: shortpass
 Model: gaussian_nb
 Accuracy: 0.8533
-Macro-F1: 0.8296
+Precision: 0.8903
+Recall: 0.7967
+F1-score: 0.8296
 
                precision    recall  f1-score   support
 

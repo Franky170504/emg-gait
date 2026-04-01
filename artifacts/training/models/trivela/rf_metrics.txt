@@ -1,7 +1,9 @@
 Shot: trivela
 Model: rf
 Accuracy: 0.7067
-Macro-F1: 0.6958
+Precision: 0.7243
+Recall: 0.6937
+F1-score: 0.6958
 
                precision    recall  f1-score   support
 

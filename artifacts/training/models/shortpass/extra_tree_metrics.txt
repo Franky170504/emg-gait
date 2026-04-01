@@ -1,7 +1,9 @@
 Shot: shortpass
 Model: extra_tree
 Accuracy: 0.9333
-Macro-F1: 0.9175
+Precision: 0.9566
+Recall: 0.8914
+F1-score: 0.9175
 
                precision    recall  f1-score   support
 

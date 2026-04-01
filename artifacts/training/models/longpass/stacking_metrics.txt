@@ -1,7 +1,9 @@
 Shot: longpass
 Model: stacking
 Accuracy: 0.9200
-Macro-F1: 0.9214
+Precision: 0.9373
+Recall: 0.9129
+F1-score: 0.9214
 
                precision    recall  f1-score   support
 

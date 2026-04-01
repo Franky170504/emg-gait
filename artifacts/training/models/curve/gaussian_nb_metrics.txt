@@ -1,7 +1,9 @@
 Shot: curve
 Model: gaussian_nb
 Accuracy: 0.6133
-Macro-F1: 0.6278
+Precision: 0.7212
+Recall: 0.6026
+F1-score: 0.6278
 
                precision    recall  f1-score   support
 

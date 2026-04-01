@@ -1,7 +1,9 @@
 Shot: shortpass
 Model: gradient_boost
 Accuracy: 0.8533
-Macro-F1: 0.8236
+Precision: 0.8323
+Recall: 0.8176
+F1-score: 0.8236
 
                precision    recall  f1-score   support
 

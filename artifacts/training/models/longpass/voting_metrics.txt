@@ -1,7 +1,9 @@
 Shot: longpass
 Model: voting
 Accuracy: 0.9333
-Macro-F1: 0.9332
+Precision: 0.9521
+Recall: 0.9219
+F1-score: 0.9332
 
                precision    recall  f1-score   support
 

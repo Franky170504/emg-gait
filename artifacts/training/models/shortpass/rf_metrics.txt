@@ -1,7 +1,9 @@
 Shot: shortpass
 Model: rf
 Accuracy: 0.9333
-Macro-F1: 0.9185
+Precision: 0.9593
+Recall: 0.8914
+F1-score: 0.9185
 
                precision    recall  f1-score   support
 

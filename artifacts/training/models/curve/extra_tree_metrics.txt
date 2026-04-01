@@ -1,7 +1,9 @@
 Shot: curve
 Model: extra_tree
 Accuracy: 0.8400
-Macro-F1: 0.8313
+Precision: 0.8638
+Recall: 0.8172
+F1-score: 0.8313
 
                precision    recall  f1-score   support
 

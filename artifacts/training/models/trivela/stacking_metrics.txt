@@ -1,7 +1,9 @@
 Shot: trivela
 Model: stacking
 Accuracy: 0.8133
-Macro-F1: 0.7920
+Precision: 0.8287
+Recall: 0.7761
+F1-score: 0.7920
 
                precision    recall  f1-score   support
 

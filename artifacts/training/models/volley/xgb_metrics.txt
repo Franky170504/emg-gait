@@ -1,7 +1,9 @@
 Shot: volley
 Model: xgb
 Accuracy: 0.7867
-Macro-F1: 0.7641
+Precision: 0.7751
+Recall: 0.7567
+F1-score: 0.7641
 
                precision    recall  f1-score   support
 

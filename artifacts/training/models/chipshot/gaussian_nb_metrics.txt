@@ -1,7 +1,9 @@
 Shot: chipshot
 Model: gaussian_nb
 Accuracy: 0.9333
-Macro-F1: 0.9234
+Precision: 0.9495
+Recall: 0.9167
+F1-score: 0.9234
 
                precision    recall  f1-score   support
 

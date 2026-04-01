@@ -1,7 +1,9 @@
 Shot: volley
 Model: stacking
 Accuracy: 0.8933
-Macro-F1: 0.8943
+Precision: 0.9078
+Recall: 0.8864
+F1-score: 0.8943
 
                precision    recall  f1-score   support
 

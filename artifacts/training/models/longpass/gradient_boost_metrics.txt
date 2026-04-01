@@ -1,7 +1,9 @@
 Shot: longpass
 Model: gradient_boost
 Accuracy: 0.7733
-Macro-F1: 0.7836
+Precision: 0.7818
+Recall: 0.7902
+F1-score: 0.7836
 
                precision    recall  f1-score   support
 

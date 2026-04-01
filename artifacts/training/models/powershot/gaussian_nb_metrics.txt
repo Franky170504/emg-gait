@@ -1,7 +1,9 @@
 Shot: powershot
 Model: gaussian_nb
 Accuracy: 0.8933
-Macro-F1: 0.8968
+Precision: 0.8882
+Recall: 0.9128
+F1-score: 0.8968
 
                precision    recall  f1-score   support
 

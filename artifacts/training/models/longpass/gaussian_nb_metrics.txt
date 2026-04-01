@@ -1,7 +1,9 @@
 Shot: longpass
 Model: gaussian_nb
 Accuracy: 0.7600
-Macro-F1: 0.7408
+Precision: 0.8118
+Recall: 0.7149
+F1-score: 0.7408
 
                precision    recall  f1-score   support
 

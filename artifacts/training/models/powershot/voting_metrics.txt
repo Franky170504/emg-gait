@@ -1,7 +1,9 @@
 Shot: powershot
 Model: voting
 Accuracy: 0.8400
-Macro-F1: 0.8161
+Precision: 0.8146
+Recall: 0.8220
+F1-score: 0.8161
 
                precision    recall  f1-score   support
 

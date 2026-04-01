@@ -1,7 +1,9 @@
 Shot: shortpass
 Model: xgb
 Accuracy: 0.9067
-Macro-F1: 0.8859
+Precision: 0.9204
+Recall: 0.8631
+F1-score: 0.8859
 
                precision    recall  f1-score   support
 

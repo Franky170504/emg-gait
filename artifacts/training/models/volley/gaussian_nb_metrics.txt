@@ -1,7 +1,9 @@
 Shot: volley
 Model: gaussian_nb
 Accuracy: 0.8533
-Macro-F1: 0.8501
+Precision: 0.8837
+Recall: 0.8318
+F1-score: 0.8501
 
                precision    recall  f1-score   support
 

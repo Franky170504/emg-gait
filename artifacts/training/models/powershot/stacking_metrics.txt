@@ -1,7 +1,9 @@
 Shot: powershot
 Model: stacking
 Accuracy: 0.8267
-Macro-F1: 0.8027
+Precision: 0.8129
+Recall: 0.8041
+F1-score: 0.8027
 
                precision    recall  f1-score   support
 

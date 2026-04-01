@@ -1,7 +1,9 @@
 Shot: shortpass
 Model: stacking
 Accuracy: 0.9333
-Macro-F1: 0.9131
+Precision: 0.9597
+Recall: 0.8839
+F1-score: 0.9131
 
                precision    recall  f1-score   support
 

@@ -1,7 +1,9 @@
 Shot: curve
 Model: stacking
 Accuracy: 0.7733
-Macro-F1: 0.7813
+Precision: 0.8344
+Recall: 0.7584
+F1-score: 0.7813
 
                precision    recall  f1-score   support
 

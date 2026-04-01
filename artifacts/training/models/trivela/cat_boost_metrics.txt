@@ -1,7 +1,9 @@
 Shot: trivela
 Model: cat_boost
 Accuracy: 0.7467
-Macro-F1: 0.7312
+Precision: 0.7670
+Recall: 0.7152
+F1-score: 0.7312
 
                precision    recall  f1-score   support
 

@@ -1,7 +1,9 @@
 Shot: powershot
 Model: xgb
 Accuracy: 0.7733
-Macro-F1: 0.7287
+Precision: 0.7596
+Recall: 0.7137
+F1-score: 0.7287
 
                precision    recall  f1-score   support
 

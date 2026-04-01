@@ -1,7 +1,9 @@
 Shot: volley
 Model: knn
 Accuracy: 0.8667
-Macro-F1: 0.8683
+Precision: 0.8763
+Recall: 0.8643
+F1-score: 0.8683
 
                precision    recall  f1-score   support
 

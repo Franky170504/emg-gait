@@ -1,7 +1,9 @@
 Shot: trivela
 Model: xgb
 Accuracy: 0.5867
-Macro-F1: 0.5411
+Precision: 0.5569
+Recall: 0.5472
+F1-score: 0.5411
 
                precision    recall  f1-score   support
 

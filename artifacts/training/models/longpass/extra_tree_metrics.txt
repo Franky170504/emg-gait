@@ -1,7 +1,9 @@
 Shot: longpass
 Model: extra_tree
 Accuracy: 0.8400
-Macro-F1: 0.8193
+Precision: 0.8773
+Recall: 0.8023
+F1-score: 0.8193
 
                precision    recall  f1-score   support
 

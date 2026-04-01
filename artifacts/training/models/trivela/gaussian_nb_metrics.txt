@@ -1,7 +1,9 @@
 Shot: trivela
 Model: gaussian_nb
 Accuracy: 0.7467
-Macro-F1: 0.7115
+Precision: 0.7835
+Recall: 0.6928
+F1-score: 0.7115
 
                precision    recall  f1-score   support
 

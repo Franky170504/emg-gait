@@ -1,7 +1,9 @@
 Shot: shortpass
 Model: cat_boost
 Accuracy: 0.9467
-Macro-F1: 0.9350
+Precision: 0.9646
+Recall: 0.9152
+F1-score: 0.9350
 
                precision    recall  f1-score   support
 

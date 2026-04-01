@@ -1,7 +1,9 @@
 Shot: shortpass
 Model: knn
 Accuracy: 0.8933
-Macro-F1: 0.8556
+Precision: 0.9128
+Recall: 0.8438
+F1-score: 0.8556
 
                precision    recall  f1-score   support
 

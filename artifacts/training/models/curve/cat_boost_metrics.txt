@@ -1,7 +1,9 @@
 Shot: curve
 Model: cat_boost
 Accuracy: 0.8267
-Macro-F1: 0.8147
+Precision: 0.8619
+Recall: 0.7995
+F1-score: 0.8147
 
                precision    recall  f1-score   support
 

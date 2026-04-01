@@ -1,7 +1,9 @@
 Shot: longpass
 Model: cat_boost
 Accuracy: 0.8133
-Macro-F1: 0.7988
+Precision: 0.8302
+Recall: 0.7866
+F1-score: 0.7988
 
                precision    recall  f1-score   support
 

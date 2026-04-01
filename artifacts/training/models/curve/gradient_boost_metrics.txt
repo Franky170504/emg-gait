@@ -1,7 +1,9 @@
 Shot: curve
 Model: gradient_boost
 Accuracy: 0.7333
-Macro-F1: 0.7165
+Precision: 0.7505
+Recall: 0.7137
+F1-score: 0.7165
 
                precision    recall  f1-score   support
 

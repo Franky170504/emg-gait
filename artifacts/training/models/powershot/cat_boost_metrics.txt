@@ -1,7 +1,9 @@
 Shot: powershot
 Model: cat_boost
 Accuracy: 0.8667
-Macro-F1: 0.8387
+Precision: 0.8566
+Recall: 0.8272
+F1-score: 0.8387
 
                precision    recall  f1-score   support
 

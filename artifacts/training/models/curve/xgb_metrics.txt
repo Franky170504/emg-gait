@@ -1,7 +1,9 @@
 Shot: curve
 Model: xgb
 Accuracy: 0.7467
-Macro-F1: 0.7390
+Precision: 0.7782
+Recall: 0.7296
+F1-score: 0.7390
 
                precision    recall  f1-score   support
 

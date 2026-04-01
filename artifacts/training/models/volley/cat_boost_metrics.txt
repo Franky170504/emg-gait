@@ -1,7 +1,9 @@
 Shot: volley
 Model: cat_boost
 Accuracy: 0.9333
-Macro-F1: 0.9316
+Precision: 0.9384
+Recall: 0.9258
+F1-score: 0.9316
 
                precision    recall  f1-score   support
 

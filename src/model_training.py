@@ -5,6 +5,7 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 
+from sklearn.metrics import precision_score, recall_score
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.metrics import accuracy_score, f1_score, classification_report
 from sklearn.base import clone
@@ -233,11 +234,18 @@ class ModelTraining:
                 zero_division=0
             )
 
+            precision = precision_score(y_true, y_pred, average='macro', zero_division=0)
+            recall = recall_score(y_true, y_pred, average='macro', zero_division=0)
+            f1 = f1_score(y_true, y_pred, average='macro')
+            accuracy = accuracy_score(y_true, y_pred)
+
             metrics_text = (
                 f"Shot: {shot_name}\n"
                 f"Model: {name}\n"
-                f"Accuracy: {accuracy_score(y_true, y_pred):.4f}\n"
-                f"Macro-F1: {f1_score(y_true, y_pred, average='macro'):.4f}\n\n"
+                f"Accuracy: {accuracy:.4f}\n"
+                f"Precision: {precision:.4f}\n"
+                f"Recall: {recall:.4f}\n"
+                f"F1-score: {f1:.4f}\n\n"
                 f"{report}"
             )
 
