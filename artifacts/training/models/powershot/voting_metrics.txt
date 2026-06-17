@@ -1,17 +1,17 @@
 Shot: powershot
 Model: voting
-Accuracy: 0.8400
-Precision: 0.8146
-Recall: 0.8220
-F1-score: 0.8161
+Accuracy: 0.8267
+Precision: 0.7996
+Recall: 0.8142
+F1-score: 0.8054
 
                precision    recall  f1-score   support
 
-      Average       0.75      0.64      0.69        14
+      Average       0.69      0.64      0.67        14
 Below-Average       0.80      0.89      0.84         9
     Excellent       0.77      0.85      0.81        20
-         Poor       0.94      0.91      0.92        32
+         Poor       0.93      0.88      0.90        32
 
-     accuracy                           0.84        75
-    macro avg       0.81      0.82      0.82        75
- weighted avg       0.84      0.84      0.84        75
+     accuracy                           0.83        75
+    macro avg       0.80      0.81      0.81        75
+ weighted avg       0.83      0.83      0.83        75

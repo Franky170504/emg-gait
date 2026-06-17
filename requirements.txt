@@ -12,3 +12,4 @@ tqdm
 setuptools
 catboost
 xgboost
+streamlit

@@ -1,17 +1,17 @@
 Shot: shortpass
 Model: rf
-Accuracy: 0.9333
-Precision: 0.9593
-Recall: 0.8914
-F1-score: 0.9185
+Accuracy: 0.9467
+Precision: 0.9666
+Recall: 0.9018
+F1-score: 0.9277
 
                precision    recall  f1-score   support
 
-      Average       0.96      0.96      0.96        24
-Below-Average       0.88      1.00      0.94        29
+      Average       0.96      1.00      0.98        24
+Below-Average       0.91      1.00      0.95        29
     Excellent       1.00      0.75      0.86         8
          Poor       1.00      0.86      0.92        14
 
-     accuracy                           0.93        75
-    macro avg       0.96      0.89      0.92        75
- weighted avg       0.94      0.93      0.93        75
+     accuracy                           0.95        75
+    macro avg       0.97      0.90      0.93        75
+ weighted avg       0.95      0.95      0.94        75

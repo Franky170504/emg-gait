@@ -1,17 +1,17 @@
 Shot: curve
 Model: gradient_boost
-Accuracy: 0.7333
-Precision: 0.7505
-Recall: 0.7137
-F1-score: 0.7165
+Accuracy: 0.7467
+Precision: 0.7644
+Recall: 0.7268
+F1-score: 0.7301
 
                precision    recall  f1-score   support
 
-      Average       0.76      0.81      0.79        16
+      Average       0.81      0.81      0.81        16
 Below-Average       0.65      0.80      0.71        25
     Excellent       0.75      0.40      0.52        15
-         Poor       0.84      0.84      0.84        19
+         Poor       0.85      0.89      0.87        19
 
-     accuracy                           0.73        75
-    macro avg       0.75      0.71      0.72        75
- weighted avg       0.74      0.73      0.72        75
+     accuracy                           0.75        75
+    macro avg       0.76      0.73      0.73        75
+ weighted avg       0.75      0.75      0.74        75

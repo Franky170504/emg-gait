@@ -1,17 +1,17 @@
 Shot: trivela
 Model: rf
-Accuracy: 0.7067
-Precision: 0.7243
-Recall: 0.6937
-F1-score: 0.6958
+Accuracy: 0.7333
+Precision: 0.7280
+Recall: 0.7092
+F1-score: 0.7121
 
                precision    recall  f1-score   support
 
-      Average       0.65      0.85      0.73        26
-Below-Average       0.75      0.86      0.80        14
-    Excellent       0.70      0.50      0.58        14
-         Poor       0.80      0.57      0.67        21
+      Average       0.72      0.88      0.79        26
+Below-Average       0.73      0.79      0.76        14
+    Excellent       0.64      0.50      0.56        14
+         Poor       0.82      0.67      0.74        21
 
-     accuracy                           0.71        75
-    macro avg       0.72      0.69      0.70        75
- weighted avg       0.72      0.71      0.70        75
+     accuracy                           0.73        75
+    macro avg       0.73      0.71      0.71        75
+ weighted avg       0.74      0.73      0.73        75

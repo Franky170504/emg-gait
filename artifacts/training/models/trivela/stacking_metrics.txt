@@ -1,17 +1,17 @@
 Shot: trivela
 Model: stacking
-Accuracy: 0.8133
-Precision: 0.8287
-Recall: 0.7761
-F1-score: 0.7920
+Accuracy: 0.8000
+Precision: 0.8148
+Recall: 0.7582
+F1-score: 0.7731
 
                precision    recall  f1-score   support
 
-      Average       0.76      0.96      0.85        26
+      Average       0.74      0.96      0.83        26
 Below-Average       1.00      0.79      0.88        14
-    Excellent       0.70      0.50      0.58        14
+    Excellent       0.67      0.43      0.52        14
          Poor       0.86      0.86      0.86        21
 
-     accuracy                           0.81        75
-    macro avg       0.83      0.78      0.79        75
- weighted avg       0.82      0.81      0.81        75
+     accuracy                           0.80        75
+    macro avg       0.81      0.76      0.77        75
+ weighted avg       0.81      0.80      0.79        75

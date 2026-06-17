@@ -1,17 +1,17 @@
 Shot: chipshot
 Model: rf
-Accuracy: 0.9333
-Precision: 0.9432
-Recall: 0.9167
-F1-score: 0.9179
+Accuracy: 0.9200
+Precision: 0.9348
+Recall: 0.9000
+F1-score: 0.9000
 
                precision    recall  f1-score   support
 
-      Average       0.77      1.00      0.87        17
+      Average       0.74      1.00      0.85        17
 Below-Average       1.00      1.00      1.00        28
-    Excellent       1.00      0.67      0.80        15
+    Excellent       1.00      0.60      0.75        15
          Poor       1.00      1.00      1.00        15
 
-     accuracy                           0.93        75
-    macro avg       0.94      0.92      0.92        75
- weighted avg       0.95      0.93      0.93        75
+     accuracy                           0.92        75
+    macro avg       0.93      0.90      0.90        75
+ weighted avg       0.94      0.92      0.92        75
