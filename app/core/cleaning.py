@@ -1,5 +1,8 @@
 import sys
 import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+
 from src.logger import get_logger
 from src.custom_exception import CustomException
 
@@ -47,3 +50,38 @@ class DataCleaning:
 
         except Exception as e:
             raise CustomException(e, sys)
+        
+    
+    def get_muscle_list(self, cleaned_df):
+        """Returns all muscle names."""
+        return [col for col in cleaned_df.columns if col != "Time"]
+
+    def create_plot(self, cleaned_df, selected_muscles):
+        """
+        Creates a Plotly figure for one or more selected muscles.
+        """
+
+        fig = go.Figure()
+
+        for muscle in selected_muscles:
+            fig.add_trace(
+                go.Scatter(
+                    x=cleaned_df["Time"],
+                    y=cleaned_df[muscle],
+                    mode="lines",
+                    name=muscle,
+                    line=dict(width=2)
+                )
+            )
+
+        fig.update_layout(
+            title="EMG Signals",
+            template="plotly_white",
+            height=600,
+            hovermode="x unified",
+            xaxis_title="Time (s)",
+            yaxis_title="EMG (mV)",
+            legend_title="Muscles"
+        )
+
+        return fig
