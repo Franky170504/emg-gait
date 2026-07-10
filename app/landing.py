@@ -74,11 +74,11 @@ add_bg_from_local("app/media/background.png")
 
 
 # Vertical spacing so the buttons sit near the bottom
-st.markdown("<div style='height:650px'></div>", unsafe_allow_html=True)
+st.markdown("<div style='height:600px'></div>", unsafe_allow_html=True)
 
 
 # Center the buttons
-left, btn1, gap, btn2, right = st.columns([2.2, 1.2, 0.25, 1.2, 2.2])
+left, btn1, gap, btn2, right = st.columns([3.0, 1.2, 0.25, 1.2, 1.5])
 
 with btn1:
     if st.button("How it works?", use_container_width=True):

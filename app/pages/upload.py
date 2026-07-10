@@ -6,6 +6,12 @@ from app.core.cleaning import DataCleaning
 st.markdown("""
 <style>
 
+/* Remove top padding */
+.block-container {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
 /* Normal buttons */
 div.stButton > button{
     width:100%;
@@ -58,6 +64,39 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+st.markdown("""
+<style>
+
+[data-testid="stFileUploader"] span[class = "st-emotion-cache-miu686 e3v525e4"] {
+    color:#f0f2f6;
+}
+
+/* Upload button text */
+[data-testid="stFileUploader"] button{
+    color:#e9ef89 !important;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<style>
+
+/* + and - icons */
+[data-testid="stNumberInput"] svg{
+    fill:#0a0a00 !important;
+    color:#0a0a00 !important;
+}
+
+/* Hover */
+[data-testid="stNumberInput"] button:hover svg{
+    fill:#FFFF80 !important;
+    color:#FFFF80 !important;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
 st.title("EMG Data Cleaning")
 
 player_name = st.text_input("Enter your name")
@@ -72,7 +111,9 @@ shot_type = st.radio(
 
 uploaded_file = st.file_uploader(
     "Upload CSV file",
-    type=["csv"]
+    type=["csv"],
+    max_upload_size=None
+
 )
 
 if uploaded_file is not None:
