@@ -1,7 +1,29 @@
-import io
-
 import streamlit as st
-from app.core.cleaning import DataCleaning
+import base64
+from app.core.cleaning import Cleaning
+
+def add_bg_from_local(image_file):
+    with open(image_file, "rb") as f:
+        encoded_string = base64.b64encode(f.read()).decode()
+
+    st.markdown(
+        f"""
+        <style>
+
+        /* Background */
+        [data-testid="stAppViewContainer"] {{
+            background-image: url("data:image/svg;base64,{encoded_string}");
+            background-size: cover;
+            background-position: fill;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }}
+
+         </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
 
 st.markdown("""
 <style>
@@ -52,7 +74,7 @@ st.markdown("""
 .stTextInput input,
 .stTextArea textarea,
 .stNumberInput input {
-    color: #1565C0 !important;
+    color: #000000 !important;
 }
 
 /* Placeholder text */
@@ -68,7 +90,7 @@ st.markdown("""
 <style>
 
 [data-testid="stFileUploader"] span[class = "st-emotion-cache-miu686 e3v525e4"] {
-    color:#f0f2f6;
+    color:#36a7b8;
 }
 
 /* Upload button text */
@@ -97,6 +119,8 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+add_bg_from_local("app/media/background_2.png")
+
 st.title("EMG Data Cleaning")
 
 player_name = st.text_input("Enter your name")
@@ -118,7 +142,7 @@ uploaded_file = st.file_uploader(
 
 if uploaded_file is not None:
 
-    cleaner = DataCleaning()
+    cleaner = Cleaning()
     cleaned_df = cleaner.process_file(uploaded_file)
 
     st.success("File cleaned successfully!")
@@ -137,7 +161,7 @@ if uploaded_file is not None:
     if selected_muscles:
         fig = cleaner.create_plot(
             cleaned_df,
-            selected_muscles
+            selected_muscles,
         )
 
         st.plotly_chart(fig, width="stretch")

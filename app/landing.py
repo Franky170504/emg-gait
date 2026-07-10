@@ -19,9 +19,9 @@ def add_bg_from_local(image_file):
 
         /* Background */
         [data-testid="stAppViewContainer"] {{
-            background-image: url("data:image/png;base64,{encoded_string}");
+            background-image: url("data:image/svg;base64,{encoded_string}");
             background-size: cover;
-            background-position: center;
+            background-position: fill;
             background-repeat: no-repeat;
             background-attachment: fixed;
         }}
@@ -70,7 +70,7 @@ def add_bg_from_local(image_file):
 
 
 # Background image
-add_bg_from_local("app/media/background.png")
+add_bg_from_local("app/media/background_1.png")
 
 
 # Vertical spacing so the buttons sit near the bottom

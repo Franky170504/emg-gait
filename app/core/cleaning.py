@@ -2,6 +2,7 @@ import sys
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+import streamlit as st
 
 from src.logger import get_logger
 from src.custom_exception import CustomException
@@ -9,7 +10,7 @@ from src.custom_exception import CustomException
 logger = get_logger(__name__)
 
 
-class DataCleaning:
+class Cleaning:
     def __init__(self):
         self.target_order = [
             'Time', 
@@ -18,6 +19,17 @@ class DataCleaning:
             'TibilaisÂ Anterior right', 'TibilaisÂ Anterior left', 
             'Gastrocnemius right', 'Gastrocnemius left'
         ]
+
+        self.muscle_colors = {
+            'Rectus Femoris right': "#9eff1f", 
+            'Rectus Femoris left': "#ff1fa9", 
+            'Hamstrings right':"#ff8a00", 
+            'Hamstrings left': "#00167a", 
+            'TibilaisÂ Anterior right' : "#ff0000", 
+            'TibilaisÂ Anterior left': "#5cd4d3", 
+            'Gastrocnemius right' : "#ffd21f", 
+            'Gastrocnemius left' :"#9440dd", 
+        }
 
     def process_file(self, uploaded_file):
         """
@@ -57,9 +69,6 @@ class DataCleaning:
         return [col for col in cleaned_df.columns if col != "Time"]
 
     def create_plot(self, cleaned_df, selected_muscles):
-        """
-        Creates a Plotly figure for one or more selected muscles.
-        """
 
         fig = go.Figure()
 
@@ -68,20 +77,64 @@ class DataCleaning:
                 go.Scatter(
                     x=cleaned_df["Time"],
                     y=cleaned_df[muscle],
-                    mode="lines",
+                    mode="lines+markers",
                     name=muscle,
-                    line=dict(width=2)
+
+                    line=dict(
+                        color=self.muscle_colors[muscle],
+                        width=3,
+                        shape="spline",      # Smooth curve
+                        smoothing=1.2
+                    ),
+
+                    marker=dict(
+                        size=5,
+                        color=self.muscle_colors[muscle],
+                    ),
+
+                    opacity=0.9
                 )
             )
 
         fig.update_layout(
+
             title="EMG Signals",
-            template="plotly_white",
-            height=600,
+
+            template="plotly_dark",
+
+            height=650,
+
             hovermode="x unified",
-            xaxis_title="Time (s)",
-            yaxis_title="EMG (mV)",
-            legend_title="Muscles"
+
+            xaxis=dict(
+                title="Time (s)",
+                showgrid=True,
+                gridcolor="rgba(255,255,255,0.12)",
+                zeroline=False
+            ),
+
+            yaxis=dict(
+                title="EMG (mV)",
+                showgrid=True,
+                gridcolor="rgba(255,255,255,0.12)",
+                zeroline=False
+            ),
+
+            plot_bgcolor="rgba(0,0,0,0)",
+            paper_bgcolor="rgba(0,0,0,0)",
+
+            legend=dict(
+                orientation="h",
+                yanchor="bottom",
+                y=1.02,
+                xanchor="center",
+                x=0.5
+            ),
+
+            font=dict(
+                size=14,
+                color="white"
+            )
         )
 
         return fig
