@@ -1,0 +1,17 @@
+Shot: longpass
+Model: voting
+Accuracy: 0.8933
+Precision: 0.9117
+Recall: 0.8951
+F1-score: 0.8986
+
+               precision    recall  f1-score   support
+
+      Average       1.00      0.79      0.88        14
+Below-Average       0.79      0.94      0.86        16
+    Excellent       0.86      0.86      0.86        28
+         Poor       1.00      1.00      1.00        17
+
+     accuracy                           0.89        75
+    macro avg       0.91      0.90      0.90        75
+ weighted avg       0.90      0.89      0.89        75

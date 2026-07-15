@@ -12,14 +12,6 @@ logger = get_logger(__name__)
 
 
 class Inference:
-    """
-    ML Inference class (MODEL-STAGE ONLY)
-
-    Assumes:
-    - Cleaning, filtering, feature extraction already done
-    - Feature CSV exists for ONE trial
-    """
-
     def __init__(self, shot_name, feature_root_dir, model_name="knn", player_name=None):
         self.shot_name = shot_name
         self.feature_root_dir = Path(feature_root_dir)

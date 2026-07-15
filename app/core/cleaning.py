@@ -1,14 +1,11 @@
 import sys
 import pandas as pd
-import plotly.express as px
 import plotly.graph_objects as go
-import streamlit as st
 
 from src.logger import get_logger
 from src.custom_exception import CustomException
 
 logger = get_logger(__name__)
-
 
 class Cleaning:
     def __init__(self):
@@ -36,13 +33,10 @@ class Cleaning:
         uploaded_file : Streamlit UploadedFile object
         Returns cleaned dataframe
         """
-
         try:
             df = pd.read_csv(uploaded_file, header=[3, 4])
-
             # Remove empty columns
             df = df.dropna(axis=1, how="all")
-
             # Clean MultiIndex column names
             df.columns = pd.MultiIndex.from_tuples(
                 [(c[0].split('(')[0].strip(), c[1].strip()) for c in df.columns]
@@ -52,7 +46,6 @@ class Cleaning:
             try:
                 emg_data = df.xs('EMG 1 (mV)', level=1, axis=1).copy()
             except KeyError:
-                
                 return None
 
             emg_data.insert(0, 'Time', time_col)
@@ -99,13 +92,9 @@ class Cleaning:
         fig.update_layout(
 
             title="EMG Signals",
-
             template="plotly_dark",
-
             height=650,
-
             hovermode="x unified",
-
             xaxis=dict(
                 title="Time (s)",
                 showgrid=True,

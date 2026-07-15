@@ -2,6 +2,12 @@ import streamlit as st
 import base64
 from app.core.cleaning import Cleaning
 
+st.set_page_config(
+    page_title="EMG Analysis",
+    layout="wide",
+    initial_sidebar_state="collapsed"
+)
+
 def add_bg_from_local(image_file):
     with open(image_file, "rb") as f:
         encoded_string = base64.b64encode(f.read()).decode()
@@ -35,14 +41,23 @@ st.markdown("""
 }
 
 /* Normal buttons */
-div.stButton > button{
+ div.stButton > button {
     width:100%;
-    height:68px;
+    height:68px;              /* Same height as other buttons */
     border-radius:15px;
-    font-size:24px;
+    font-size:22px;
     font-weight:600;
+    border:2px solid #E6E66A;
+    background:rgba(0,0,0,0);
+    color:#E6E66A;
+    transition:0.3s;
 }
 
+div.stButton > button:hover {
+    background:rgba(230,230,106,0.15);
+    border-color:#FFFF80;
+    color:#FFFF80;
+}
 /* Download buttons */
 div.stDownloadButton > button{
     width:100%;
@@ -50,11 +65,9 @@ div.stDownloadButton > button{
     border-radius:15px;
     font-size:22px;
     font-weight:600;
-
     border:2px solid #E6E66A;
     background:rgba(0,0,0,0);
     color:#E6E66A;
-
     transition:0.3s;
 }
 
@@ -176,22 +189,31 @@ if uploaded_file is not None:
             csv = cleaned_df.to_csv(index=False).encode("utf-8")
             svg_bytes = fig.to_image(format="svg")
 
-            col1, col2 = st.columns(2)
-            with col1:
+            left, btn1, gap, btn2, gap, btn3, right = st.columns([2.0, 1.2, 0.25, 1.2, 0.25, 1.2, 1.5])
+
+            with btn1:
                 st.download_button(
                 label="Download Cleaned CSV",
                 data=csv,
                 file_name=f"{base_filename}.csv",
                 mime="text/csv",
             )
-            # Place a button in the second column
-            with col2:
+
+            with btn2:
                 st.download_button(
                 label="Download Graph",
                 data=svg_bytes,
                 file_name=f"{base_filename}.svg",
                 mime="image/svg+xml",
             )
+                
+            with btn3:
+                if st.button(label = "Predict performance"):
+                    st.switch_page("pages/predict.py")
+
+
+
+
         
 
         

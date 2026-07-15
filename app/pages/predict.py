@@ -1,5 +1,4 @@
 import streamlit as st
-
 import base64
 
 st.set_page_config(
@@ -35,5 +34,6 @@ add_bg_from_local("app/media/background_2.png")
 left, btn1, gap, btn2, right = st.columns([3.0, 1.2, 0.25, 1.2, 1.5])
 
 with btn1:
-    if st.button("Start analysis", use_container_width=True):
+    if st.button("Save Results"):
         st.switch_page("pages/upload.py")
+
