@@ -90,9 +90,9 @@ def generate_distinct_dummy_files(source_file, output_folder, time_col_name):
 
 # --- CONFIGURATION SECTION ---
 # 1. Update this to your actual file name
-SOURCE_FILE = r'artifacts\training\cleaned\chipshot\Player05_4.csv' 
+SOURCE_FILE = r'artifacts\training\raw\chipshot\Player05\4.csv' 
 # 2. This is the new folder where files will be saved
-OUTPUT_DIR = r"artifacts\inference"
+OUTPUT_DIR = r"app\csv"
 # 3. Update this to match your Time column header exactly
 TIME_COLUMN = 'Time'            
 

@@ -12,7 +12,7 @@ logger = get_logger(__name__)
 
 
 class Inference:
-    def __init__(self, shot_name, feature_root_dir, model_name="knn", player_name=None):
+    def __init__(self, shot_name, feature_root_dir, model_name="gradient_boost", player_name=None):
         self.shot_name = shot_name
         self.feature_root_dir = Path(feature_root_dir)
         self.player_name = player_name

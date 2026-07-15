@@ -14,8 +14,8 @@ if __name__ == "__main__":
 
     player_name = input("Enter Playername: ")
 
-    # data_processor = DataCleaning(INFERENCE_RAW_DIR, INFERENCE_CLEANED_DIR)
-    # data_processor.run()
+    data_processor = DataCleaning(INFERENCE_RAW_DIR, INFERENCE_CLEANED_DIR)
+    data_processor.run()
 
     data_filter = Filtering(INFERENCE_CLEANED_DIR, INFERENCE_FILTERED_DIR)
     data_filter.run()
@@ -27,7 +27,7 @@ if __name__ == "__main__":
     shot_name=shot_name,
     feature_root_dir="artifacts/inference/features",
     player_name=player_name,
-    model_name="knn"
+    model_name="gradient_boost"
     )
     inference.run()
 

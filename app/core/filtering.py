@@ -55,15 +55,9 @@ class Filtering:
                     time_col=c
                     break
 
-            emg_cols=[
-                c for c in df.columns
-                if c!=time_col
-            ]
+            emg_cols=[c for c in df.columns if c!=time_col]
             for col in emg_cols:
-                x = pd.to_numeric(
-                    df[col],
-                    errors="coerce"
-                ).fillna(0).values
+                x = pd.to_numeric(df[col],errors="coerce").fillna(0).values
                 x=self.notch_filter(x)
                 x=self.bandpass_filter(x)
                 x=np.abs(x)
