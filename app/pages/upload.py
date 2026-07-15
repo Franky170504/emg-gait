@@ -182,13 +182,10 @@ if uploaded_file is not None:
         st.subheader("Save Results")
 
         if player_name and shot_type and shot_number:
-
             base_filename = f"{player_name}_{shot_type}_{shot_number}"
-
             # CSV download
             csv = cleaned_df.to_csv(index=False).encode("utf-8")
             svg_bytes = fig.to_image(format="svg")
-
             left, btn1, gap, btn2, gap, btn3, right = st.columns([2.0, 1.2, 0.25, 1.2, 0.25, 1.2, 1.5])
 
             with btn1:
@@ -206,14 +203,12 @@ if uploaded_file is not None:
                 file_name=f"{base_filename}.svg",
                 mime="image/svg+xml",
             )
-                
+            
             with btn3:
                 if st.button(label = "Predict performance"):
+                    st.session_state["cleaned_df"] = cleaned_df
+                    st.session_state["player_name"] = player_name
+                    st.session_state["shot_type"] = shot_type
+                    st.session_state["shot_number"] = shot_number
+
                     st.switch_page("pages/predict.py")
-
-
-
-
-        
-
-        

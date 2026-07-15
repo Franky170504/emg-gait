@@ -121,7 +121,7 @@ if __name__ == "__main__":
     )
     player_name = input("Enter Playername: ")
 
-    feature_csv = "artifacts/inference/features/shot_name/trial_1_features.csv"
+    feature_csv = "artifacts/inference/features/volley/features_master.csv"
 
     inference = Inference(shot_name=shot_name,
         player_name=player_name,

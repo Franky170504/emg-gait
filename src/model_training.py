@@ -147,7 +147,7 @@ class ModelTraining:
             if "performance_level_adjusted" in df.columns
             else "performance_level"
         )
-
+        
         exclude_meta = {
             "file", "player", "n_samples", "fs_used",
             "gmm_label", "gmm_confidence",

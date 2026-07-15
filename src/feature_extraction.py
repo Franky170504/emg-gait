@@ -89,7 +89,7 @@ class FeatureExtraction:
         mdf = float(f[idx]) if idx < len(f) else float(f[-1])
         def bandpow(a,b):
             mask = (f >= a) & (f <= b)
-            return float(np.trapz(Pxx[mask], f[mask])) if np.any(mask) else 0.0
+            return float(np.trapezoid(Pxx[mask], f[mask])) if np.any(mask) else 0.0
         return {"mnf": mnf, "mdf": mdf, "bp_20_60": bandpow(20,60), "bp_60_100": bandpow(60,100), "bp_100_200": bandpow(100,200)}
     
     def process_file_to_features(self, path):

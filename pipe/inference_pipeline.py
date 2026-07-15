@@ -14,8 +14,8 @@ if __name__ == "__main__":
 
     player_name = input("Enter Playername: ")
 
-    data_processor = DataCleaning(INFERENCE_RAW_DIR, INFERENCE_CLEANED_DIR)
-    data_processor.run()
+    # data_processor = DataCleaning(INFERENCE_RAW_DIR, INFERENCE_CLEANED_DIR)
+    # data_processor.run()
 
     data_filter = Filtering(INFERENCE_CLEANED_DIR, INFERENCE_FILTERED_DIR)
     data_filter.run()
