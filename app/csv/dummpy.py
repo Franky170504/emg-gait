@@ -6,9 +6,9 @@ from sklearn.neighbors import NearestNeighbors
 # =====================================================
 # INPUT / OUTPUT FILES
 # =====================================================
-INPUT_FILE = r"artifacts\training\raw\chipshot\Player05\5.csv"
+INPUT_FILE = r"artifacts\training\raw\volley\Player05\5.csv"
 OUTPUT_DIR = r"app\csv"
-OUTPUT_FILENAME = "subject1_synthetic.csv"
+OUTPUT_FILENAME = "subject_volley_synthetic.csv"
 # Create output directory if it doesn't exist
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
@@ -52,7 +52,6 @@ emg = df[emg_columns].astype(float).values
 # Train KNN
 # =====================================================
 k = 8
-
 knn = NearestNeighbors(
     n_neighbors=k,
     algorithm="auto"

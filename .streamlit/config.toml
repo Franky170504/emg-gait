@@ -1,7 +1,7 @@
 [theme]
-backgroundColor = "#278a94" # Main app background
+backgroundColor = "#1a7634" # Main app background
 textColor = "#e9ef89" # Main text color
 baseFontSize = 18
-secondaryBackgroundColor="#36a7b8"
+secondaryBackgroundColor="#00bf63"
 
 
