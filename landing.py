@@ -58,7 +58,7 @@ def add_bg_from_local(image_file):
     )
 
 # Background image
-add_bg_from_local("app/media/background_1.png")
+add_bg_from_local("media/background_1.png")
 # Vertical spacing so the buttons sit near the bottom
 st.markdown("<div style='height:600px'></div>", unsafe_allow_html=True)
 # Center the buttons
