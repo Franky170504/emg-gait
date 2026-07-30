@@ -16,4 +16,4 @@ streamlit
 kaleido
 plotly
 streamlit
-plotly_get_chrome
+pip install --upgrade kaleido
