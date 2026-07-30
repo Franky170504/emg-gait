@@ -16,4 +16,4 @@ streamlit
 kaleido
 plotly
 streamlit
-kaleido
+kaleido<=0.2.1
