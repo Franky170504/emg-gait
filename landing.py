@@ -82,7 +82,7 @@ def add_bg_from_local(image_file):
 # Background image
 add_bg_from_local("media/background_1.png")
 # Vertical spacing so the buttons sit near the bottom
-st.markdown("<div style='height:75vh'></div>", unsafe_allow_html=True)
+st.markdown("<div style='height:80vh'></div>", unsafe_allow_html=True)
 
 @st.cache_data
 def create_zip(folder: Path) -> bytes:
