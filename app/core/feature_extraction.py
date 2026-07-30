@@ -6,41 +6,27 @@ from scipy.signal import welch
 from scipy.ndimage import uniform_filter1d
 from scipy.integrate import trapezoid
 
-from src.custom_exception import CustomException
-from src.logger import get_logger
-
+from app.src.custom_exception import CustomException
+from app.src.logger import get_logger
 
 logger = get_logger(__name__)
 
-
 class FeatureExtraction:
-
     def __init__(self):
-
         self.FS = 2148.1481
-
         self.WELCH_NPERSEG = 512
-
         self.MIN_NUM_SAMPLES = 50
-
         self.CANONICAL_CHANNEL_ORDER = [
-
             'Rectus Femoris right',
             'Rectus Femoris left',
-
             'Hamstrings right',
             'Hamstrings left',
-
             'TibilaisÂ Anterior right',
             'TibilaisÂ Anterior left',
-
             'Gastrocnemius right',
             'Gastrocnemius left'
         ]
-
-
         self.RMS_WINDOW_MS = 50
-
         self.RMS_WINDOW_SAMPLES = max(
             1,
             int(
@@ -50,36 +36,26 @@ class FeatureExtraction:
             )
         )
 
-
     # ---------------------------------------------------
     # Frequency calculation
     # ---------------------------------------------------
 
     def safe_welch(self, x):
-
         nperseg_eff = min(
             len(x),
             max(16, self.WELCH_NPERSEG)
         )
-
         try:
-
             f, Pxx = welch(
                 x,
                 fs=self.FS,
                 nperseg=nperseg_eff
             )
-
         except Exception:
-
             f = np.array([0.0])
-
             Pxx = np.array([0.0])
 
-
         return f, Pxx
-
-
 
     # ---------------------------------------------------
     # Moving RMS
@@ -90,12 +66,10 @@ class FeatureExtraction:
             x,
             window_samples
     ):
-
         if (
             len(x) < window_samples
             or window_samples <= 1
         ):
-
             return (
                 np.sqrt(
                     np.mean(x**2)
@@ -103,22 +77,14 @@ class FeatureExtraction:
                 *
                 np.ones_like(x)
             )
-
-
         sq = x.astype(float)**2
-
-
         mean_sq = uniform_filter1d(
             sq,
             size=window_samples,
             mode="nearest"
         )
-
-
         return np.sqrt(mean_sq)
-
-
-
+    
     # ---------------------------------------------------
     # Channel ordering
     # ---------------------------------------------------
@@ -129,44 +95,21 @@ class FeatureExtraction:
             canonical_order
     ):
 
-
         cols_present = df.columns.tolist()
-
-
         ordered = []
-
-
         for c in canonical_order:
-
-
             if c in cols_present:
-
                 ordered.append(c)
-
-
             else:
-
                 df[c] = np.nan
-
                 ordered.append(c)
-
-
 
         remaining = [
-
             c for c in cols_present
-
             if c not in canonical_order
-
         ]
-
-
         ordered += remaining
-
-
         return df[ordered]
-
-
 
     # ---------------------------------------------------
     # Time domain features
@@ -176,15 +119,9 @@ class FeatureExtraction:
             self,
             x
     ):
-
-
         x = np.asarray(x).astype(float)
-
-
         if x.size == 0:
-
             return {
-
                 "mean": np.nan,
                 "std": np.nan,
                 "rms": np.nan,
@@ -192,37 +129,24 @@ class FeatureExtraction:
                 "wl": np.nan,
                 "peak": np.nan,
                 "iEMG": np.nan
-
             }
-
-
         return {
-
-
             "mean":
                 float(np.mean(x)),
-
-
             "std":
                 float(np.std(x)),
-
-
             "rms":
                 float(
                     np.sqrt(
                         np.mean(x**2)
                     )
                 ),
-
-
             "mav":
                 float(
                     np.mean(
                         np.abs(x)
                     )
                 ),
-
-
             "wl":
                 float(
                     np.sum(
@@ -231,24 +155,17 @@ class FeatureExtraction:
                         )
                     )
                 ),
-
-
             "peak":
                 float(
                     np.max(x)
                 ),
-
-
             "iEMG":
                 float(
                     trapezoid(
                         np.abs(x)
                     )
                 )
-
         }
-
-
 
     # ---------------------------------------------------
     # Frequency domain features
@@ -258,33 +175,17 @@ class FeatureExtraction:
             self,
             x
     ):
-
-
         x = np.asarray(x).astype(float)
-
-
         if len(x) < 4:
-
             return {
-
                 "mnf": np.nan,
                 "mdf": np.nan,
-
                 "bp_20_60": np.nan,
                 "bp_60_100": np.nan,
                 "bp_100_200": np.nan
-
             }
-
-
-
         f, Pxx = self.safe_welch(x)
-
-
         total = np.sum(Pxx) + 1e-12
-
-
-
         mnf = (
             np.sum(
                 f * Pxx
@@ -292,29 +193,16 @@ class FeatureExtraction:
             /
             total
         )
-
-
-
         csum = np.cumsum(Pxx)
-
-
         idx = np.searchsorted(
             csum,
             total / 2
         )
-
-
         mdf = (
-
             float(f[idx])
-
             if idx < len(f)
-
             else float(f[-1])
-
         )
-
-
 
         def bandpow(a,b):
 

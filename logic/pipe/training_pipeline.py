@@ -1,10 +1,10 @@
-from config.path_config import *
+from app.config.path_config import *
 
-from src.data_cleaning import DataCleaning
-from src.data_filtering import Filtering
-from src.feature_extraction import FeatureExtraction
-from src.standardization_clustering import Standardize_Cluster
-from src.model_training import ModelTraining
+from logic.src.data_cleaning import DataCleaning
+from logic.src.data_filtering import Filtering
+from logic.src.feature_extraction import FeatureExtraction
+from logic.src.standardization_clustering import Standardize_Cluster
+from logic.src.model_training import ModelTraining
 
 if __name__ == "__main__":
     # data_processor = DataCleaning(TRAINING_RAW_DIR, TRAINING_CLEANED_DIR)

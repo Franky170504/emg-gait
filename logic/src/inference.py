@@ -4,9 +4,9 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 
-from src.custom_exception import CustomException
-from src.logger import get_logger
-from config.path_config import *
+from logic.src.custom_exception import CustomException
+from app.src.logger import get_logger
+from app.config.path_config import *
 
 logger = get_logger(__name__)
 

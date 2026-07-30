@@ -22,9 +22,9 @@ from sklearn.pipeline import Pipeline
 from sklearn.naive_bayes import GaussianNB
 import xgboost as xgb
 
-from src.custom_exception import CustomException
-from src.logger import get_logger
-from config.path_config import *
+from logic.src.custom_exception import CustomException
+from app.src.logger import get_logger
+from app.config.path_config import *
 
 warnings.filterwarnings("ignore")
 logger = get_logger(__name__)

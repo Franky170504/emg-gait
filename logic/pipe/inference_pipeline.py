@@ -1,8 +1,8 @@
-from config.path_config import *
-from src.data_cleaning import DataCleaning
-from src.data_filtering import Filtering
-from src.feature_extraction import FeatureExtraction
-from src.inference import Inference
+from app.config.path_config import *
+from logic.src.data_cleaning import DataCleaning
+from logic.src.data_filtering import Filtering
+from logic.src.feature_extraction import FeatureExtraction
+from logic.src.inference import Inference
 
 if __name__ == "__main__":
 

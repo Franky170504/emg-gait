@@ -3,9 +3,9 @@ import pandas as pd
 
 from pathlib import Path
 from tqdm import tqdm
-from src.logger import get_logger
-from src.custom_exception import CustomException
-from config.path_config import *
+from app.src.logger import get_logger
+from logic.src.custom_exception import CustomException
+from app.config.path_config import *
 
 logger = get_logger(__name__)
 

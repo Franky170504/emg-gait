@@ -1,0 +1,1 @@
+APP_MODELS_DIR = r"app/models"

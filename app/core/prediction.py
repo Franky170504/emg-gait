@@ -3,8 +3,8 @@ from pathlib import Path
 import joblib
 import pandas as pd
 
-from src.custom_exception import CustomException
-from config.path_config import APP_MODELS_DIR
+from logic.src.custom_exception import CustomException
+from app.config.path_config import APP_MODELS_DIR
 
 class Inference:
     def __init__(self, shot_name, player_name=None):

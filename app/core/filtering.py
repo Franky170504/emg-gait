@@ -3,8 +3,8 @@ import numpy as np
 import pandas as pd
 from scipy import signal
 
-from src.logger import get_logger
-from src.custom_exception import CustomException
+from app.src.logger import get_logger
+from logic.src.custom_exception import CustomException
 
 logger = get_logger(__name__)
 

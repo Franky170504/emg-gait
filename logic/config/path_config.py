@@ -25,5 +25,3 @@ POWERSHOT_MODEL_DIR = r"artifacts/training/models/powershot"
 SHORTPASS_MODEL_DIR = r"artifacts/training/models/shortpass"
 TRIVELA_MODEL_DIR = r"artifacts/training/models/trivela"
 VOLLEY_MODEL_DIR = r"artifacts/training/models/volley"
-
-APP_MODELS_DIR = r"app/models"
