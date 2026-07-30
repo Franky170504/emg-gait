@@ -1,9 +1,9 @@
 import streamlit as st
 import base64
 
-from app.core.filtering import Filtering
-from app.core.feature_extraction import FeatureExtraction
-from app.core.prediction import Inference
+from core.filtering import Filtering
+from core.feature_extraction import FeatureExtraction
+from core.prediction import Inference
 
 st.set_page_config(
     page_title="EMG Analysis",
@@ -31,7 +31,7 @@ def add_bg_from_local(image_file):
         unsafe_allow_html=True,
     )
 
-add_bg_from_local("app/media/background_2.png")
+add_bg_from_local("media/background_2.png")
 
 st.set_page_config(
     page_title="Prediction",

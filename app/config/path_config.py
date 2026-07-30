@@ -1,1 +1,1 @@
-APP_MODELS_DIR = r"app/models"
+APP_MODELS_DIR = r"models"

@@ -1,6 +1,6 @@
 import streamlit as st
 import base64
-from app.core.cleaning import Cleaning
+from core.cleaning import Cleaning
 
 st.set_page_config(
     page_title="EMG Analysis",
@@ -125,7 +125,7 @@ st.markdown("""
     """, 
 unsafe_allow_html=True)
 
-add_bg_from_local("app/media/background_2.png")
+add_bg_from_local("media/background_2.png")
 
 st.title("EMG Data Cleaning")
 player_name = st.text_input("Enter your name")

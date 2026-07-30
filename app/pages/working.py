@@ -46,7 +46,7 @@ st.markdown('<p style="font-size: 20px;">' \
 '''3)Muscle-wise deviation analysis is performed to generate interpretable feedback for performance improvement.'''
 '</p>', text_alignment="justify", unsafe_allow_html=True)
 
-add_bg_from_local("app/media/background_2.png")
+add_bg_from_local("media/background_2.png")
 left, btn1, gap, btn2, right = st.columns([3.0, 1.2, 0.25, 1.2, 1.5])
 with btn1:
     if st.button("Start analysis", use_container_width=True):

@@ -14,3 +14,5 @@ catboost
 xgboost
 streamlit
 kaleido
+plotly
+streamlit

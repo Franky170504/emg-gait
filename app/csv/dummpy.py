@@ -6,9 +6,9 @@ from sklearn.neighbors import NearestNeighbors
 # =====================================================
 # INPUT / OUTPUT FILES
 # =====================================================
-INPUT_FILE = r"artifacts\training\raw\volley\Player05\5.csv"
-OUTPUT_DIR = r"app\csv"
-OUTPUT_FILENAME = "subject_volley_synthetic.csv"
+INPUT_FILE = r"artifacts\training\raw\trivela\Player02\3.csv"
+OUTPUT_DIR = r"csv"
+OUTPUT_FILENAME = "subject_trivela_synthetic.csv"
 # Create output directory if it doesn't exist
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 

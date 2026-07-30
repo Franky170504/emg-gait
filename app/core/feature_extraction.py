@@ -6,8 +6,8 @@ from scipy.signal import welch
 from scipy.ndimage import uniform_filter1d
 from scipy.integrate import trapezoid
 
-from app.src.custom_exception import CustomException
-from app.src.logger import get_logger
+from src.custom_exception import CustomException
+from src.logger import get_logger
 
 logger = get_logger(__name__)
 
