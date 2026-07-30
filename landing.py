@@ -82,7 +82,7 @@ def add_bg_from_local(image_file):
 # Background image
 add_bg_from_local("media/background_1.png")
 # Vertical spacing so the buttons sit near the bottom
-# st.markdown("<div style='height:600px'></div>", unsafe_allow_html=True)
+st.markdown("<div style='height:clamp(200px, 60vh, 600px)'></div>", unsafe_allow_html=True)
 
 @st.cache_data
 def create_zip(folder: Path) -> bytes:
@@ -99,25 +99,24 @@ def create_zip(folder: Path) -> bytes:
 
 folder_path = Path(__file__).parent / "csv"
 
-with st.container(border=None, height=700,vertical_alignment="bottom"):
-    left, btn1, gap, btn2, gap, btn3, right = st.columns([3.0, 1.2, 0.25, 1.2, 0.25, 1.2, 1.5])
+left, btn1, gap, btn2, gap, btn3, right = st.columns([3.0, 1.2, 0.25, 1.2, 0.25, 1.2, 1.5])
 
-    with btn1:
-        if st.button("How it works?", use_container_width=True):
-            st.switch_page("pages/working.py")
+with btn1:
+    if st.button("How it works?", use_container_width=True):
+        st.switch_page("pages/working.py")
 
-    with btn2:
-        if st.button("Start analysis", use_container_width=True):
-            st.switch_page("pages/upload.py")
+with btn2:
+    if st.button("Start analysis", use_container_width=True):
+        st.switch_page("pages/upload.py")
 
-    with btn3:
-        if folder_path.exists():
-            st.download_button(
-                label="Download sample files",
-                data=create_zip(folder_path),
-                file_name="sample_folder.zip",
-                mime="application/zip",
-            )
-        else:
-            st.error("Sample folder was not found.")
+with btn3:
+    if folder_path.exists():
+        st.download_button(
+            label="Download sample files",
+            data=create_zip(folder_path),
+            file_name="sample_folder.zip",
+            mime="application/zip",
+        )
+    else:
+        st.error("Sample folder was not found.")
 
