@@ -16,11 +16,7 @@ def add_bg_from_local(image_file):
 
     st.markdown(
         f"""
-        <style>
-            [data-testid="stSidebarCollapsedControl"] {
-                display: none;
-            }
-            /* Background */
+        /* Background */
             [data-testid="stAppViewContainer"] {{
                 background-image: url("data:image/svg;base64,{encoded_string}");
                 background-size: cover;
