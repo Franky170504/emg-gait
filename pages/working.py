@@ -28,7 +28,7 @@ def add_bg_from_local(image_file):
     )
 
 st.markdown('<p style="font-size: 20px;">' \
-'''Football is a physically demanding sport that requires precise coordination of multiple lower-limb muscles to execute different type of kicks effectively. Each type of kick involves distinct biomechanical characteristics and muscle activation patterns that influence power generation, accuracy and control. Improper activation of muscles during kicking can lead to inefficient performance and may increase the risk of muscular strain or injury. Despite this, performance evaluation in football training is still largely based on visual observation and subjective judgment by coaches.'''
+'''Football is a physically d sport that requires precise coordination of multiple lower-limb muscles to execute different type of kicks effectively. Each type of kick involves distinct biomechanical characteristics and muscle activation patterns that influence power generation, accuracy and control. Improper activation of muscles during kicking can lead to inefficient performance and may increase the risk of muscular strain or injury. Despite this, performance evaluation in football training is still largely based on visual observation and subjective judgment by coaches.'''
 
 '<p style="font-size: 20px;">' \
 '''Surface electromyography has emerged as a reliable method for directly measuring muscle activation during dynamic movements. EMG signals provide insight into the timing and intensity of muscle activity, making them valuable for biomechanical analysis. When combined with machine learning techniques, EMG data can be used to model complex movement patterns and distinguish between different types of actions.'''
