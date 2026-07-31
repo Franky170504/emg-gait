@@ -7,7 +7,7 @@ from zipfile import ZIP_DEFLATED, ZipFile
 st.set_page_config(
     page_title="EMG Analysis",
     layout="wide",
-    initial_sidebar_state="locked"
+    initial_sidebar_state="collapsed"
 )
 
 def add_bg_from_local(image_file):
@@ -17,9 +17,6 @@ def add_bg_from_local(image_file):
     st.markdown(
         f"""
         <style>
-            [data-testid="stSidebarCollapsedControl"] {
-                display: none;
-            }
             /* Background */
             [data-testid="stAppViewContainer"] {{
                 background-image: url("data:image/svg;base64,{encoded_string}");
